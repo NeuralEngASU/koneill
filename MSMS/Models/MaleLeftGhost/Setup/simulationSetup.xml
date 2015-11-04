@@ -1,0 +1,985 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<simulationSetupInfo creationDate="2013-01-14-07:00" setupName="MaleLeftGhost" version="0.1" xmlns="http://www.cgtechnical.com/ami/simulationSetupInfo/sins">
+    <simulationSetup>
+        <general>
+            <exportFilename>0.0</exportFilename>
+            <gravityVectorMeterPerSec2>
+                <ns1:x xmlns:ns1="http://www.cgtechnical.com/ami/genericModel/mstns">0.0</ns1:x>
+                <ns2:y xmlns:ns2="http://www.cgtechnical.com/ami/genericModel/mstns">-9.81</ns2:y>
+                <ns3:z xmlns:ns3="http://www.cgtechnical.com/ami/genericModel/mstns">0.0</ns3:z>
+            </gravityVectorMeterPerSec2>
+        </general>
+        <setup>
+            <component>
+                <jointName>ShoulderPitch</jointName>
+                <jointId>
+                    <ns4:componentType xmlns:ns4="http://www.cgtechnical.com/ami/genericModel/mstns">J</ns4:componentType>
+                    <ns5:componentNumber xmlns:ns5="http://www.cgtechnical.com/ami/genericModel/mstns">1158</ns5:componentNumber>
+                </jointId>
+                <seqNum>40</seqNum>
+                <simulationType>Physics-based</simulationType>
+                <degreeOfFreedom>
+                    <name>SHOULDER GEARMOTOR ASSEMBLY-1--SHOULDER TO HR-1</name>
+                    <initialPositionMOrRad>0.0</initialPositionMOrRad>
+                    <velocityMeterPerSecOrRadPerSec>0.0</velocityMeterPerSecOrRadPerSec>
+                </degreeOfFreedom>
+            </component>
+            <component>
+                <jointName>TorsoJoint</jointName>
+                <jointId>
+                    <ns6:componentType xmlns:ns6="http://www.cgtechnical.com/ami/genericModel/mstns">J</ns6:componentType>
+                    <ns7:componentNumber xmlns:ns7="http://www.cgtechnical.com/ami/genericModel/mstns">44</ns7:componentNumber>
+                </jointId>
+                <seqNum>28</seqNum>
+                <simulationType>Physics-based</simulationType>
+                <degreeOfFreedom>
+                    <name>xrot</name>
+                    <initialPositionMOrRad>0.0</initialPositionMOrRad>
+                    <velocityMeterPerSecOrRadPerSec>0.0</velocityMeterPerSecOrRadPerSec>
+                </degreeOfFreedom>
+                <degreeOfFreedom>
+                    <name>yrot</name>
+                    <initialPositionMOrRad>0.0</initialPositionMOrRad>
+                    <velocityMeterPerSecOrRadPerSec>0.0</velocityMeterPerSecOrRadPerSec>
+                </degreeOfFreedom>
+                <degreeOfFreedom>
+                    <name>zrot</name>
+                    <initialPositionMOrRad>0.0</initialPositionMOrRad>
+                    <velocityMeterPerSecOrRadPerSec>0.0</velocityMeterPerSecOrRadPerSec>
+                </degreeOfFreedom>
+            </component>
+            <component>
+                <jointName>WristRoll</jointName>
+                <jointId>
+                    <ns8:componentType xmlns:ns8="http://www.cgtechnical.com/ami/genericModel/mstns">J</ns8:componentType>
+                    <ns9:componentNumber xmlns:ns9="http://www.cgtechnical.com/ami/genericModel/mstns">1159</ns9:componentNumber>
+                </jointId>
+                <seqNum>36</seqNum>
+                <simulationType>Physics-based</simulationType>
+                <degreeOfFreedom>
+                    <name>ELBOW TO RR-1--COBOT MAIN ASSEMBLY-1</name>
+                    <initialPositionMOrRad>0.0</initialPositionMOrRad>
+                    <velocityMeterPerSecOrRadPerSec>0.0</velocityMeterPerSecOrRadPerSec>
+                </degreeOfFreedom>
+            </component>
+            <component>
+                <jointName>GhostMiddleDIP</jointName>
+                <jointId>
+                    <ns10:componentType xmlns:ns10="http://www.cgtechnical.com/ami/genericModel/mstns">J</ns10:componentType>
+                    <ns11:componentNumber xmlns:ns11="http://www.cgtechnical.com/ami/genericModel/mstns">1167</ns11:componentNumber>
+                </jointId>
+                <seqNum>11</seqNum>
+                <simulationType>Physics-based</simulationType>
+                <degreeOfFreedom>
+                    <name>PART Middle mid assy-1--PART middle distal assy-1_</name>
+                    <initialPositionMOrRad>0.0</initialPositionMOrRad>
+                    <velocityMeterPerSecOrRadPerSec>0.0</velocityMeterPerSecOrRadPerSec>
+                </degreeOfFreedom>
+            </component>
+            <component>
+                <jointName>IndexKnuckle</jointName>
+                <jointId>
+                    <ns12:componentType xmlns:ns12="http://www.cgtechnical.com/ami/genericModel/mstns">J</ns12:componentType>
+                    <ns13:componentNumber xmlns:ns13="http://www.cgtechnical.com/ami/genericModel/mstns">27669</ns13:componentNumber>
+                </jointId>
+                <seqNum>55</seqNum>
+                <simulationType>Physics-based</simulationType>
+                <degreeOfFreedom>
+                    <name>INDEX_METACAR_Ver 3-1--PART Index proximal assy-1_</name>
+                    <initialPositionMOrRad>0.0</initialPositionMOrRad>
+                    <velocityMeterPerSecOrRadPerSec>0.0</velocityMeterPerSecOrRadPerSec>
+                </degreeOfFreedom>
+            </component>
+            <component>
+                <jointName>GhostThumbMeta</jointName>
+                <jointId>
+                    <ns14:componentType xmlns:ns14="http://www.cgtechnical.com/ami/genericModel/mstns">J</ns14:componentType>
+                    <ns15:componentNumber xmlns:ns15="http://www.cgtechnical.com/ami/genericModel/mstns">1156</ns15:componentNumber>
+                </jointId>
+                <seqNum>18</seqNum>
+                <simulationType>Physics-based</simulationType>
+                <degreeOfFreedom>
+                    <name>PART Palm assy-1--THUMB_YOKE_4DEG Version 2-1_</name>
+                    <initialPositionMOrRad>0.0</initialPositionMOrRad>
+                    <velocityMeterPerSecOrRadPerSec>0.0</velocityMeterPerSecOrRadPerSec>
+                </degreeOfFreedom>
+            </component>
+            <component>
+                <jointName>GhostIndexKnuckle</jointName>
+                <jointId>
+                    <ns16:componentType xmlns:ns16="http://www.cgtechnical.com/ami/genericModel/mstns">J</ns16:componentType>
+                    <ns17:componentNumber xmlns:ns17="http://www.cgtechnical.com/ami/genericModel/mstns">1169</ns17:componentNumber>
+                </jointId>
+                <seqNum>19</seqNum>
+                <simulationType>Physics-based</simulationType>
+                <degreeOfFreedom>
+                    <name>INDEX_METACAR_Ver 3-1--PART Index proximal assy-1_</name>
+                    <initialPositionMOrRad>0.0</initialPositionMOrRad>
+                    <velocityMeterPerSecOrRadPerSec>0.0</velocityMeterPerSecOrRadPerSec>
+                </degreeOfFreedom>
+            </component>
+            <component>
+                <jointName>LittleKnuckle</jointName>
+                <jointId>
+                    <ns18:componentType xmlns:ns18="http://www.cgtechnical.com/ami/genericModel/mstns">J</ns18:componentType>
+                    <ns19:componentNumber xmlns:ns19="http://www.cgtechnical.com/ami/genericModel/mstns">15094</ns19:componentNumber>
+                </jointId>
+                <seqNum>33</seqNum>
+                <simulationType>Physics-based</simulationType>
+                <degreeOfFreedom>
+                    <name>LITTLE_METACAR_I-1--PART little proximal assy-1_</name>
+                    <initialPositionMOrRad>0.0</initialPositionMOrRad>
+                    <velocityMeterPerSecOrRadPerSec>0.0</velocityMeterPerSecOrRadPerSec>
+                </degreeOfFreedom>
+            </component>
+            <component>
+                <jointName>ShoulderRoll2</jointName>
+                <jointId>
+                    <ns20:componentType xmlns:ns20="http://www.cgtechnical.com/ami/genericModel/mstns">J</ns20:componentType>
+                    <ns21:componentNumber xmlns:ns21="http://www.cgtechnical.com/ami/genericModel/mstns">1166</ns21:componentNumber>
+                </jointId>
+                <seqNum>51</seqNum>
+                <simulationType>Physics-based</simulationType>
+                <degreeOfFreedom>
+                    <name>SHOULDER TO HR-1--HR TO ELBOW-1</name>
+                    <initialPositionMOrRad>0.0</initialPositionMOrRad>
+                    <velocityMeterPerSecOrRadPerSec>0.0</velocityMeterPerSecOrRadPerSec>
+                </degreeOfFreedom>
+            </component>
+            <component>
+                <jointName>Sphere1J</jointName>
+                <jointId>
+                    <ns22:componentType xmlns:ns22="http://www.cgtechnical.com/ami/genericModel/mstns">J</ns22:componentType>
+                    <ns23:componentNumber xmlns:ns23="http://www.cgtechnical.com/ami/genericModel/mstns">123</ns23:componentNumber>
+                </jointId>
+                <seqNum>57</seqNum>
+                <simulationType>Physics-based</simulationType>
+                <degreeOfFreedom>
+                    <name>Sphere1J-T1</name>
+                    <initialPositionMOrRad>0.0</initialPositionMOrRad>
+                    <velocityMeterPerSecOrRadPerSec>0.0</velocityMeterPerSecOrRadPerSec>
+                </degreeOfFreedom>
+                <degreeOfFreedom>
+                    <name>Sphere1J-T2</name>
+                    <initialPositionMOrRad>0.0</initialPositionMOrRad>
+                    <velocityMeterPerSecOrRadPerSec>0.0</velocityMeterPerSecOrRadPerSec>
+                </degreeOfFreedom>
+                <degreeOfFreedom>
+                    <name>Sphere1J-T3</name>
+                    <initialPositionMOrRad>0.0</initialPositionMOrRad>
+                    <velocityMeterPerSecOrRadPerSec>0.0</velocityMeterPerSecOrRadPerSec>
+                </degreeOfFreedom>
+            </component>
+            <component>
+                <jointName>Sphere3J</jointName>
+                <jointId>
+                    <ns24:componentType xmlns:ns24="http://www.cgtechnical.com/ami/genericModel/mstns">J</ns24:componentType>
+                    <ns25:componentNumber xmlns:ns25="http://www.cgtechnical.com/ami/genericModel/mstns">131</ns25:componentNumber>
+                </jointId>
+                <seqNum>60</seqNum>
+                <simulationType>Physics-based</simulationType>
+                <degreeOfFreedom>
+                    <name>Sphere3J-T1</name>
+                    <initialPositionMOrRad>0.0</initialPositionMOrRad>
+                    <velocityMeterPerSecOrRadPerSec>0.0</velocityMeterPerSecOrRadPerSec>
+                </degreeOfFreedom>
+                <degreeOfFreedom>
+                    <name>Sphere3J-T2</name>
+                    <initialPositionMOrRad>0.0</initialPositionMOrRad>
+                    <velocityMeterPerSecOrRadPerSec>0.0</velocityMeterPerSecOrRadPerSec>
+                </degreeOfFreedom>
+                <degreeOfFreedom>
+                    <name>Sphere3J-T3</name>
+                    <initialPositionMOrRad>0.0</initialPositionMOrRad>
+                    <velocityMeterPerSecOrRadPerSec>0.0</velocityMeterPerSecOrRadPerSec>
+                </degreeOfFreedom>
+            </component>
+            <component>
+                <jointName>GhostThumbDIP</jointName>
+                <jointId>
+                    <ns26:componentType xmlns:ns26="http://www.cgtechnical.com/ami/genericModel/mstns">J</ns26:componentType>
+                    <ns27:componentNumber xmlns:ns27="http://www.cgtechnical.com/ami/genericModel/mstns">1147</ns27:componentNumber>
+                </jointId>
+                <seqNum>1</seqNum>
+                <simulationType>Physics-based</simulationType>
+                <degreeOfFreedom>
+                    <name>PART Thumb proximal assy-1--PART Thumb distal assy-1_</name>
+                    <initialPositionMOrRad>0.0</initialPositionMOrRad>
+                    <velocityMeterPerSecOrRadPerSec>0.0</velocityMeterPerSecOrRadPerSec>
+                </degreeOfFreedom>
+            </component>
+            <component>
+                <jointName>GhostMiddleKnuckle</jointName>
+                <jointId>
+                    <ns28:componentType xmlns:ns28="http://www.cgtechnical.com/ami/genericModel/mstns">J</ns28:componentType>
+                    <ns29:componentNumber xmlns:ns29="http://www.cgtechnical.com/ami/genericModel/mstns">1170</ns29:componentNumber>
+                </jointId>
+                <seqNum>5</seqNum>
+                <simulationType>Physics-based</simulationType>
+                <degreeOfFreedom>
+                    <name>PART Palm assy-1--PART Middle proximal-1_</name>
+                    <initialPositionMOrRad>0.0</initialPositionMOrRad>
+                    <velocityMeterPerSecOrRadPerSec>0.0</velocityMeterPerSecOrRadPerSec>
+                </degreeOfFreedom>
+            </component>
+            <component>
+                <jointName>ShoulderRoll</jointName>
+                <jointId>
+                    <ns30:componentType xmlns:ns30="http://www.cgtechnical.com/ami/genericModel/mstns">J</ns30:componentType>
+                    <ns31:componentNumber xmlns:ns31="http://www.cgtechnical.com/ami/genericModel/mstns">1150</ns31:componentNumber>
+                </jointId>
+                <seqNum>39</seqNum>
+                <simulationType>Physics-based</simulationType>
+                <degreeOfFreedom>
+                    <name>SHOULDER TO SOCKET-1--SHOULDER GEARMOTOR ASSEMBLY-1</name>
+                    <initialPositionMOrRad>0.0</initialPositionMOrRad>
+                    <velocityMeterPerSecOrRadPerSec>0.0</velocityMeterPerSecOrRadPerSec>
+                </degreeOfFreedom>
+            </component>
+            <component>
+                <jointName>Sphere4J</jointName>
+                <jointId>
+                    <ns32:componentType xmlns:ns32="http://www.cgtechnical.com/ami/genericModel/mstns">J</ns32:componentType>
+                    <ns33:componentNumber xmlns:ns33="http://www.cgtechnical.com/ami/genericModel/mstns">135</ns33:componentNumber>
+                </jointId>
+                <seqNum>59</seqNum>
+                <simulationType>Physics-based</simulationType>
+                <degreeOfFreedom>
+                    <name>Sphere4J-T1</name>
+                    <initialPositionMOrRad>0.0</initialPositionMOrRad>
+                    <velocityMeterPerSecOrRadPerSec>0.0</velocityMeterPerSecOrRadPerSec>
+                </degreeOfFreedom>
+                <degreeOfFreedom>
+                    <name>Sphere4J-T2</name>
+                    <initialPositionMOrRad>0.0</initialPositionMOrRad>
+                    <velocityMeterPerSecOrRadPerSec>0.0</velocityMeterPerSecOrRadPerSec>
+                </degreeOfFreedom>
+                <degreeOfFreedom>
+                    <name>Sphere4J-T3</name>
+                    <initialPositionMOrRad>0.0</initialPositionMOrRad>
+                    <velocityMeterPerSecOrRadPerSec>0.0</velocityMeterPerSecOrRadPerSec>
+                </degreeOfFreedom>
+            </component>
+            <component>
+                <jointName>GhostLittlePIP</jointName>
+                <jointId>
+                    <ns34:componentType xmlns:ns34="http://www.cgtechnical.com/ami/genericModel/mstns">J</ns34:componentType>
+                    <ns35:componentNumber xmlns:ns35="http://www.cgtechnical.com/ami/genericModel/mstns">1155</ns35:componentNumber>
+                </jointId>
+                <seqNum>14</seqNum>
+                <simulationType>Physics-based</simulationType>
+                <degreeOfFreedom>
+                    <name>PART little proximal assy-1--PART little mid assy-1_</name>
+                    <initialPositionMOrRad>0.0</initialPositionMOrRad>
+                    <velocityMeterPerSecOrRadPerSec>0.0</velocityMeterPerSecOrRadPerSec>
+                </degreeOfFreedom>
+            </component>
+            <component>
+                <jointName>IndexPIP</jointName>
+                <jointId>
+                    <ns36:componentType xmlns:ns36="http://www.cgtechnical.com/ami/genericModel/mstns">J</ns36:componentType>
+                    <ns37:componentNumber xmlns:ns37="http://www.cgtechnical.com/ami/genericModel/mstns">25649</ns37:componentNumber>
+                </jointId>
+                <seqNum>41</seqNum>
+                <simulationType>Physics-based</simulationType>
+                <degreeOfFreedom>
+                    <name>PART Index proximal assy-1--PART Index mid assy-1_</name>
+                    <initialPositionMOrRad>0.0</initialPositionMOrRad>
+                    <velocityMeterPerSecOrRadPerSec>0.0</velocityMeterPerSecOrRadPerSec>
+                </degreeOfFreedom>
+            </component>
+            <component>
+                <jointName>LittleSide</jointName>
+                <jointId>
+                    <ns38:componentType xmlns:ns38="http://www.cgtechnical.com/ami/genericModel/mstns">J</ns38:componentType>
+                    <ns39:componentNumber xmlns:ns39="http://www.cgtechnical.com/ami/genericModel/mstns">22649</ns39:componentNumber>
+                </jointId>
+                <seqNum>48</seqNum>
+                <simulationType>Physics-based</simulationType>
+                <degreeOfFreedom>
+                    <name>PART Palm assy-1--LITTLE_METACAR_I-1_</name>
+                    <initialPositionMOrRad>0.0</initialPositionMOrRad>
+                    <velocityMeterPerSecOrRadPerSec>0.0</velocityMeterPerSecOrRadPerSec>
+                </degreeOfFreedom>
+            </component>
+            <component>
+                <jointName>GhostIndexDIP</jointName>
+                <jointId>
+                    <ns40:componentType xmlns:ns40="http://www.cgtechnical.com/ami/genericModel/mstns">J</ns40:componentType>
+                    <ns41:componentNumber xmlns:ns41="http://www.cgtechnical.com/ami/genericModel/mstns">1168</ns41:componentNumber>
+                </jointId>
+                <seqNum>2</seqNum>
+                <simulationType>Physics-based</simulationType>
+                <degreeOfFreedom>
+                    <name>PART Index mid assy-1--PART Index distal assy-1_</name>
+                    <initialPositionMOrRad>0.0</initialPositionMOrRad>
+                    <velocityMeterPerSecOrRadPerSec>0.0</velocityMeterPerSecOrRadPerSec>
+                </degreeOfFreedom>
+            </component>
+            <component>
+                <jointName>RingSide</jointName>
+                <jointId>
+                    <ns42:componentType xmlns:ns42="http://www.cgtechnical.com/ami/genericModel/mstns">J</ns42:componentType>
+                    <ns43:componentNumber xmlns:ns43="http://www.cgtechnical.com/ami/genericModel/mstns">2139</ns43:componentNumber>
+                </jointId>
+                <seqNum>53</seqNum>
+                <simulationType>Physics-based</simulationType>
+                <degreeOfFreedom>
+                    <name>PART Palm assy-1--RING_METACAR_I-1_</name>
+                    <initialPositionMOrRad>0.0</initialPositionMOrRad>
+                    <velocityMeterPerSecOrRadPerSec>0.0</velocityMeterPerSecOrRadPerSec>
+                </degreeOfFreedom>
+            </component>
+            <component>
+                <jointName>ThumbDIP</jointName>
+                <jointId>
+                    <ns44:componentType xmlns:ns44="http://www.cgtechnical.com/ami/genericModel/mstns">J</ns44:componentType>
+                    <ns45:componentNumber xmlns:ns45="http://www.cgtechnical.com/ami/genericModel/mstns">10424</ns45:componentNumber>
+                </jointId>
+                <seqNum>54</seqNum>
+                <simulationType>Physics-based</simulationType>
+                <degreeOfFreedom>
+                    <name>PART Thumb proximal assy-1--PART Thumb distal assy-1_</name>
+                    <initialPositionMOrRad>0.0</initialPositionMOrRad>
+                    <velocityMeterPerSecOrRadPerSec>0.0</velocityMeterPerSecOrRadPerSec>
+                </degreeOfFreedom>
+            </component>
+            <component>
+                <jointName>MiddleDIP</jointName>
+                <jointId>
+                    <ns46:componentType xmlns:ns46="http://www.cgtechnical.com/ami/genericModel/mstns">J</ns46:componentType>
+                    <ns47:componentNumber xmlns:ns47="http://www.cgtechnical.com/ami/genericModel/mstns">2453</ns47:componentNumber>
+                </jointId>
+                <seqNum>44</seqNum>
+                <simulationType>Physics-based</simulationType>
+                <degreeOfFreedom>
+                    <name>PART Middle mid assy-1--PART middle distal assy-1_</name>
+                    <initialPositionMOrRad>0.0</initialPositionMOrRad>
+                    <velocityMeterPerSecOrRadPerSec>0.0</velocityMeterPerSecOrRadPerSec>
+                </degreeOfFreedom>
+            </component>
+            <component>
+                <jointName>IndexDIP</jointName>
+                <jointId>
+                    <ns48:componentType xmlns:ns48="http://www.cgtechnical.com/ami/genericModel/mstns">J</ns48:componentType>
+                    <ns49:componentNumber xmlns:ns49="http://www.cgtechnical.com/ami/genericModel/mstns">26992</ns49:componentNumber>
+                </jointId>
+                <seqNum>30</seqNum>
+                <simulationType>Physics-based</simulationType>
+                <degreeOfFreedom>
+                    <name>PART Index mid assy-1--PART Index distal assy-1_</name>
+                    <initialPositionMOrRad>0.0</initialPositionMOrRad>
+                    <velocityMeterPerSecOrRadPerSec>0.0</velocityMeterPerSecOrRadPerSec>
+                </degreeOfFreedom>
+            </component>
+            <component>
+                <jointName>GhostRingPIP</jointName>
+                <jointId>
+                    <ns50:componentType xmlns:ns50="http://www.cgtechnical.com/ami/genericModel/mstns">J</ns50:componentType>
+                    <ns51:componentNumber xmlns:ns51="http://www.cgtechnical.com/ami/genericModel/mstns">1162</ns51:componentNumber>
+                </jointId>
+                <seqNum>15</seqNum>
+                <simulationType>Physics-based</simulationType>
+                <degreeOfFreedom>
+                    <name>PART ring proximal assy-1--PART ring mid assy-1_</name>
+                    <initialPositionMOrRad>0.0</initialPositionMOrRad>
+                    <velocityMeterPerSecOrRadPerSec>0.0</velocityMeterPerSecOrRadPerSec>
+                </degreeOfFreedom>
+            </component>
+            <component>
+                <jointName>RingPIP</jointName>
+                <jointId>
+                    <ns52:componentType xmlns:ns52="http://www.cgtechnical.com/ami/genericModel/mstns">J</ns52:componentType>
+                    <ns53:componentNumber xmlns:ns53="http://www.cgtechnical.com/ami/genericModel/mstns">14909</ns53:componentNumber>
+                </jointId>
+                <seqNum>29</seqNum>
+                <simulationType>Physics-based</simulationType>
+                <degreeOfFreedom>
+                    <name>PART ring proximal assy-1--PART ring mid assy-1_</name>
+                    <initialPositionMOrRad>0.0</initialPositionMOrRad>
+                    <velocityMeterPerSecOrRadPerSec>0.0</velocityMeterPerSecOrRadPerSec>
+                </degreeOfFreedom>
+            </component>
+            <component>
+                <jointName>GlenoHumeral</jointName>
+                <jointId>
+                    <ns54:componentType xmlns:ns54="http://www.cgtechnical.com/ami/genericModel/mstns">J</ns54:componentType>
+                    <ns55:componentNumber xmlns:ns55="http://www.cgtechnical.com/ami/genericModel/mstns">36</ns55:componentNumber>
+                </jointId>
+                <seqNum>22</seqNum>
+                <simulationType>Physics-based</simulationType>
+                <degreeOfFreedom>
+                    <name>GH_ABAD</name>
+                    <initialPositionMOrRad>0.0</initialPositionMOrRad>
+                    <velocityMeterPerSecOrRadPerSec>0.0</velocityMeterPerSecOrRadPerSec>
+                </degreeOfFreedom>
+                <degreeOfFreedom>
+                    <name>GH_FE</name>
+                    <initialPositionMOrRad>0.0</initialPositionMOrRad>
+                    <velocityMeterPerSecOrRadPerSec>0.0</velocityMeterPerSecOrRadPerSec>
+                </degreeOfFreedom>
+                <degreeOfFreedom>
+                    <name>GH_IER</name>
+                    <initialPositionMOrRad>0.0</initialPositionMOrRad>
+                    <velocityMeterPerSecOrRadPerSec>0.0</velocityMeterPerSecOrRadPerSec>
+                </degreeOfFreedom>
+            </component>
+            <component>
+                <jointName>ThumbSide</jointName>
+                <jointId>
+                    <ns56:componentType xmlns:ns56="http://www.cgtechnical.com/ami/genericModel/mstns">J</ns56:componentType>
+                    <ns57:componentNumber xmlns:ns57="http://www.cgtechnical.com/ami/genericModel/mstns">7261</ns57:componentNumber>
+                </jointId>
+                <seqNum>46</seqNum>
+                <simulationType>Physics-based</simulationType>
+                <degreeOfFreedom>
+                    <name>THUMB_YOKE_4DEG Version 2-1--PART thumb base assy-1_</name>
+                    <initialPositionMOrRad>0.0</initialPositionMOrRad>
+                    <velocityMeterPerSecOrRadPerSec>0.0</velocityMeterPerSecOrRadPerSec>
+                </degreeOfFreedom>
+            </component>
+            <component>
+                <jointName>WristYaw</jointName>
+                <jointId>
+                    <ns58:componentType xmlns:ns58="http://www.cgtechnical.com/ami/genericModel/mstns">J</ns58:componentType>
+                    <ns59:componentNumber xmlns:ns59="http://www.cgtechnical.com/ami/genericModel/mstns">1153</ns59:componentNumber>
+                </jointId>
+                <seqNum>52</seqNum>
+                <simulationType>Physics-based</simulationType>
+                <degreeOfFreedom>
+                    <name>WRIST-1--PART Palm assy-1</name>
+                    <initialPositionMOrRad>0.0</initialPositionMOrRad>
+                    <velocityMeterPerSecOrRadPerSec>0.0</velocityMeterPerSecOrRadPerSec>
+                </degreeOfFreedom>
+            </component>
+            <component>
+                <jointName>GhostRingSide</jointName>
+                <jointId>
+                    <ns60:componentType xmlns:ns60="http://www.cgtechnical.com/ami/genericModel/mstns">J</ns60:componentType>
+                    <ns61:componentNumber xmlns:ns61="http://www.cgtechnical.com/ami/genericModel/mstns">1164</ns61:componentNumber>
+                </jointId>
+                <seqNum>6</seqNum>
+                <simulationType>Physics-based</simulationType>
+                <degreeOfFreedom>
+                    <name>PART Palm assy-1--RING_METACAR_I-1_</name>
+                    <initialPositionMOrRad>0.0</initialPositionMOrRad>
+                    <velocityMeterPerSecOrRadPerSec>0.0</velocityMeterPerSecOrRadPerSec>
+                </degreeOfFreedom>
+            </component>
+            <component>
+                <jointName>GhostThumbKnuckle</jointName>
+                <jointId>
+                    <ns62:componentType xmlns:ns62="http://www.cgtechnical.com/ami/genericModel/mstns">J</ns62:componentType>
+                    <ns63:componentNumber xmlns:ns63="http://www.cgtechnical.com/ami/genericModel/mstns">1163</ns63:componentNumber>
+                </jointId>
+                <seqNum>8</seqNum>
+                <simulationType>Physics-based</simulationType>
+                <degreeOfFreedom>
+                    <name>PART thumb base assy-1--PART Thumb proximal assy-1_</name>
+                    <initialPositionMOrRad>0.0</initialPositionMOrRad>
+                    <velocityMeterPerSecOrRadPerSec>0.0</velocityMeterPerSecOrRadPerSec>
+                </degreeOfFreedom>
+            </component>
+            <component>
+                <jointName>RingDIP</jointName>
+                <jointId>
+                    <ns64:componentType xmlns:ns64="http://www.cgtechnical.com/ami/genericModel/mstns">J</ns64:componentType>
+                    <ns65:componentNumber xmlns:ns65="http://www.cgtechnical.com/ami/genericModel/mstns">11786</ns65:componentNumber>
+                </jointId>
+                <seqNum>50</seqNum>
+                <simulationType>Physics-based</simulationType>
+                <degreeOfFreedom>
+                    <name>PART ring mid assy-1--PART Ring distal assy-1_</name>
+                    <initialPositionMOrRad>0.0</initialPositionMOrRad>
+                    <velocityMeterPerSecOrRadPerSec>0.0</velocityMeterPerSecOrRadPerSec>
+                </degreeOfFreedom>
+            </component>
+            <component>
+                <jointName>Sphere2J</jointName>
+                <jointId>
+                    <ns66:componentType xmlns:ns66="http://www.cgtechnical.com/ami/genericModel/mstns">J</ns66:componentType>
+                    <ns67:componentNumber xmlns:ns67="http://www.cgtechnical.com/ami/genericModel/mstns">127</ns67:componentNumber>
+                </jointId>
+                <seqNum>58</seqNum>
+                <simulationType>Physics-based</simulationType>
+                <degreeOfFreedom>
+                    <name>Sphere2J-T1</name>
+                    <initialPositionMOrRad>0.0</initialPositionMOrRad>
+                    <velocityMeterPerSecOrRadPerSec>0.0</velocityMeterPerSecOrRadPerSec>
+                </degreeOfFreedom>
+                <degreeOfFreedom>
+                    <name>Sphere2J-T2</name>
+                    <initialPositionMOrRad>0.0</initialPositionMOrRad>
+                    <velocityMeterPerSecOrRadPerSec>0.0</velocityMeterPerSecOrRadPerSec>
+                </degreeOfFreedom>
+                <degreeOfFreedom>
+                    <name>Sphere2J-T3</name>
+                    <initialPositionMOrRad>0.0</initialPositionMOrRad>
+                    <velocityMeterPerSecOrRadPerSec>0.0</velocityMeterPerSecOrRadPerSec>
+                </degreeOfFreedom>
+            </component>
+            <component>
+                <jointName>GhostRingDIP</jointName>
+                <jointId>
+                    <ns68:componentType xmlns:ns68="http://www.cgtechnical.com/ami/genericModel/mstns">J</ns68:componentType>
+                    <ns69:componentNumber xmlns:ns69="http://www.cgtechnical.com/ami/genericModel/mstns">1144</ns69:componentNumber>
+                </jointId>
+                <seqNum>17</seqNum>
+                <simulationType>Physics-based</simulationType>
+                <degreeOfFreedom>
+                    <name>PART ring mid assy-1--PART Ring distal assy-1_</name>
+                    <initialPositionMOrRad>0.0</initialPositionMOrRad>
+                    <velocityMeterPerSecOrRadPerSec>0.0</velocityMeterPerSecOrRadPerSec>
+                </degreeOfFreedom>
+            </component>
+            <component>
+                <jointName>GhostLittleSide</jointName>
+                <jointId>
+                    <ns70:componentType xmlns:ns70="http://www.cgtechnical.com/ami/genericModel/mstns">J</ns70:componentType>
+                    <ns71:componentNumber xmlns:ns71="http://www.cgtechnical.com/ami/genericModel/mstns">1161</ns71:componentNumber>
+                </jointId>
+                <seqNum>13</seqNum>
+                <simulationType>Physics-based</simulationType>
+                <degreeOfFreedom>
+                    <name>PART Palm assy-1--LITTLE_METACAR_I-1_</name>
+                    <initialPositionMOrRad>0.0</initialPositionMOrRad>
+                    <velocityMeterPerSecOrRadPerSec>0.0</velocityMeterPerSecOrRadPerSec>
+                </degreeOfFreedom>
+            </component>
+            <component>
+                <jointName>MiddleKnuckle</jointName>
+                <jointId>
+                    <ns72:componentType xmlns:ns72="http://www.cgtechnical.com/ami/genericModel/mstns">J</ns72:componentType>
+                    <ns73:componentNumber xmlns:ns73="http://www.cgtechnical.com/ami/genericModel/mstns">2763</ns73:componentNumber>
+                </jointId>
+                <seqNum>34</seqNum>
+                <simulationType>Physics-based</simulationType>
+                <degreeOfFreedom>
+                    <name>PART Palm assy-1--PART Middle proximal-1_</name>
+                    <initialPositionMOrRad>0.0</initialPositionMOrRad>
+                    <velocityMeterPerSecOrRadPerSec>0.0</velocityMeterPerSecOrRadPerSec>
+                </degreeOfFreedom>
+            </component>
+            <component>
+                <jointName>Shoulder1</jointName>
+                <jointId>
+                    <ns74:componentType xmlns:ns74="http://www.cgtechnical.com/ami/genericModel/mstns">J</ns74:componentType>
+                    <ns75:componentNumber xmlns:ns75="http://www.cgtechnical.com/ami/genericModel/mstns">1157</ns75:componentNumber>
+                </jointId>
+                <seqNum>49</seqNum>
+                <simulationType>Physics-based</simulationType>
+                <degreeOfFreedom>
+                    <name>RootPart--SHOULDER TO SOCKET-1</name>
+                    <initialPositionMOrRad>0.0</initialPositionMOrRad>
+                    <velocityMeterPerSecOrRadPerSec>0.0</velocityMeterPerSecOrRadPerSec>
+                </degreeOfFreedom>
+            </component>
+            <component>
+                <jointName>RadioUlnar</jointName>
+                <jointId>
+                    <ns76:componentType xmlns:ns76="http://www.cgtechnical.com/ami/genericModel/mstns">J</ns76:componentType>
+                    <ns77:componentNumber xmlns:ns77="http://www.cgtechnical.com/ami/genericModel/mstns">38</ns77:componentNumber>
+                </jointId>
+                <seqNum>23</seqNum>
+                <simulationType>Physics-based</simulationType>
+                <degreeOfFreedom>
+                    <name>RU_PS</name>
+                    <initialPositionMOrRad>0.0</initialPositionMOrRad>
+                    <velocityMeterPerSecOrRadPerSec>0.0</velocityMeterPerSecOrRadPerSec>
+                </degreeOfFreedom>
+            </component>
+            <component>
+                <jointName>GhostLittleKnuckle</jointName>
+                <jointId>
+                    <ns78:componentType xmlns:ns78="http://www.cgtechnical.com/ami/genericModel/mstns">J</ns78:componentType>
+                    <ns79:componentNumber xmlns:ns79="http://www.cgtechnical.com/ami/genericModel/mstns">1160</ns79:componentNumber>
+                </jointId>
+                <seqNum>7</seqNum>
+                <simulationType>Physics-based</simulationType>
+                <degreeOfFreedom>
+                    <name>LITTLE_METACAR_I-1--PART little proximal assy-1_</name>
+                    <initialPositionMOrRad>0.0</initialPositionMOrRad>
+                    <velocityMeterPerSecOrRadPerSec>0.0</velocityMeterPerSecOrRadPerSec>
+                </degreeOfFreedom>
+            </component>
+            <component>
+                <jointName>ThumbKnuckle</jointName>
+                <jointId>
+                    <ns80:componentType xmlns:ns80="http://www.cgtechnical.com/ami/genericModel/mstns">J</ns80:componentType>
+                    <ns81:componentNumber xmlns:ns81="http://www.cgtechnical.com/ami/genericModel/mstns">29476</ns81:componentNumber>
+                </jointId>
+                <seqNum>35</seqNum>
+                <simulationType>Physics-based</simulationType>
+                <degreeOfFreedom>
+                    <name>PART thumb base assy-1--PART Thumb proximal assy-1_</name>
+                    <initialPositionMOrRad>0.0</initialPositionMOrRad>
+                    <velocityMeterPerSecOrRadPerSec>0.0</velocityMeterPerSecOrRadPerSec>
+                </degreeOfFreedom>
+            </component>
+            <component>
+                <jointName>IndexSide</jointName>
+                <jointId>
+                    <ns82:componentType xmlns:ns82="http://www.cgtechnical.com/ami/genericModel/mstns">J</ns82:componentType>
+                    <ns83:componentNumber xmlns:ns83="http://www.cgtechnical.com/ami/genericModel/mstns">14209</ns83:componentNumber>
+                </jointId>
+                <seqNum>42</seqNum>
+                <simulationType>Physics-based</simulationType>
+                <degreeOfFreedom>
+                    <name>PART Palm assy-1--INDEX_METACAR_Ver 3-1_</name>
+                    <initialPositionMOrRad>0.0</initialPositionMOrRad>
+                    <velocityMeterPerSecOrRadPerSec>0.0</velocityMeterPerSecOrRadPerSec>
+                </degreeOfFreedom>
+            </component>
+            <component>
+                <jointName>GhostIndexPIP</jointName>
+                <jointId>
+                    <ns84:componentType xmlns:ns84="http://www.cgtechnical.com/ami/genericModel/mstns">J</ns84:componentType>
+                    <ns85:componentNumber xmlns:ns85="http://www.cgtechnical.com/ami/genericModel/mstns">1154</ns85:componentNumber>
+                </jointId>
+                <seqNum>16</seqNum>
+                <simulationType>Physics-based</simulationType>
+                <degreeOfFreedom>
+                    <name>PART Index proximal assy-1--PART Index mid assy-1_</name>
+                    <initialPositionMOrRad>0.0</initialPositionMOrRad>
+                    <velocityMeterPerSecOrRadPerSec>0.0</velocityMeterPerSecOrRadPerSec>
+                </degreeOfFreedom>
+            </component>
+            <component>
+                <jointName>WristPitch</jointName>
+                <jointId>
+                    <ns86:componentType xmlns:ns86="http://www.cgtechnical.com/ami/genericModel/mstns">J</ns86:componentType>
+                    <ns87:componentNumber xmlns:ns87="http://www.cgtechnical.com/ami/genericModel/mstns">1146</ns87:componentNumber>
+                </jointId>
+                <seqNum>43</seqNum>
+                <simulationType>Physics-based</simulationType>
+                <degreeOfFreedom>
+                    <name>COBOT MAIN ASSEMBLY-1--WRIST-1</name>
+                    <initialPositionMOrRad>0.0</initialPositionMOrRad>
+                    <velocityMeterPerSecOrRadPerSec>0.0</velocityMeterPerSecOrRadPerSec>
+                </degreeOfFreedom>
+            </component>
+            <component>
+                <jointName>MiddlePIP</jointName>
+                <jointId>
+                    <ns88:componentType xmlns:ns88="http://www.cgtechnical.com/ami/genericModel/mstns">J</ns88:componentType>
+                    <ns89:componentNumber xmlns:ns89="http://www.cgtechnical.com/ami/genericModel/mstns">27966</ns89:componentNumber>
+                </jointId>
+                <seqNum>32</seqNum>
+                <simulationType>Physics-based</simulationType>
+                <degreeOfFreedom>
+                    <name>PART Middle proximal-1--PART Middle mid assy-1_</name>
+                    <initialPositionMOrRad>0.0</initialPositionMOrRad>
+                    <velocityMeterPerSecOrRadPerSec>0.0</velocityMeterPerSecOrRadPerSec>
+                </degreeOfFreedom>
+            </component>
+            <component>
+                <jointName>Sphere5J</jointName>
+                <jointId>
+                    <ns90:componentType xmlns:ns90="http://www.cgtechnical.com/ami/genericModel/mstns">J</ns90:componentType>
+                    <ns91:componentNumber xmlns:ns91="http://www.cgtechnical.com/ami/genericModel/mstns">139</ns91:componentNumber>
+                </jointId>
+                <seqNum>56</seqNum>
+                <simulationType>Physics-based</simulationType>
+                <degreeOfFreedom>
+                    <name>Sphere5J-T1</name>
+                    <initialPositionMOrRad>0.0</initialPositionMOrRad>
+                    <velocityMeterPerSecOrRadPerSec>0.0</velocityMeterPerSecOrRadPerSec>
+                </degreeOfFreedom>
+                <degreeOfFreedom>
+                    <name>Sphere5J-T2</name>
+                    <initialPositionMOrRad>0.0</initialPositionMOrRad>
+                    <velocityMeterPerSecOrRadPerSec>0.0</velocityMeterPerSecOrRadPerSec>
+                </degreeOfFreedom>
+                <degreeOfFreedom>
+                    <name>Sphere5J-T3</name>
+                    <initialPositionMOrRad>0.0</initialPositionMOrRad>
+                    <velocityMeterPerSecOrRadPerSec>0.0</velocityMeterPerSecOrRadPerSec>
+                </degreeOfFreedom>
+            </component>
+            <component>
+                <jointName>HumeroUlnar</jointName>
+                <jointId>
+                    <ns92:componentType xmlns:ns92="http://www.cgtechnical.com/ami/genericModel/mstns">J</ns92:componentType>
+                    <ns93:componentNumber xmlns:ns93="http://www.cgtechnical.com/ami/genericModel/mstns">42</ns93:componentNumber>
+                </jointId>
+                <seqNum>24</seqNum>
+                <simulationType>Physics-based</simulationType>
+                <degreeOfFreedom>
+                    <name>HU_FE</name>
+                    <initialPositionMOrRad>0.0</initialPositionMOrRad>
+                    <velocityMeterPerSecOrRadPerSec>0.0</velocityMeterPerSecOrRadPerSec>
+                </degreeOfFreedom>
+            </component>
+            <component>
+                <jointName>GhostThumbSide</jointName>
+                <jointId>
+                    <ns94:componentType xmlns:ns94="http://www.cgtechnical.com/ami/genericModel/mstns">J</ns94:componentType>
+                    <ns95:componentNumber xmlns:ns95="http://www.cgtechnical.com/ami/genericModel/mstns">1151</ns95:componentNumber>
+                </jointId>
+                <seqNum>9</seqNum>
+                <simulationType>Physics-based</simulationType>
+                <degreeOfFreedom>
+                    <name>THUMB_YOKE_4DEG Version 2-1--PART thumb base assy-1_</name>
+                    <initialPositionMOrRad>0.0</initialPositionMOrRad>
+                    <velocityMeterPerSecOrRadPerSec>0.0</velocityMeterPerSecOrRadPerSec>
+                </degreeOfFreedom>
+            </component>
+            <component>
+                <jointName>ElbowPitch</jointName>
+                <jointId>
+                    <ns96:componentType xmlns:ns96="http://www.cgtechnical.com/ami/genericModel/mstns">J</ns96:componentType>
+                    <ns97:componentNumber xmlns:ns97="http://www.cgtechnical.com/ami/genericModel/mstns">1145</ns97:componentNumber>
+                </jointId>
+                <seqNum>47</seqNum>
+                <simulationType>Physics-based</simulationType>
+                <degreeOfFreedom>
+                    <name>HR TO ELBOW-1--ELBOW TO RR-1</name>
+                    <initialPositionMOrRad>0.0</initialPositionMOrRad>
+                    <velocityMeterPerSecOrRadPerSec>0.0</velocityMeterPerSecOrRadPerSec>
+                </degreeOfFreedom>
+            </component>
+            <component>
+                <jointName>baseJoint</jointName>
+                <jointId>
+                    <ns98:componentType xmlns:ns98="http://www.cgtechnical.com/ami/genericModel/mstns">J</ns98:componentType>
+                    <ns99:componentNumber xmlns:ns99="http://www.cgtechnical.com/ami/genericModel/mstns">43</ns99:componentNumber>
+                </jointId>
+                <seqNum>26</seqNum>
+                <simulationType>Physics-based</simulationType>
+                <degreeOfFreedom>
+                    <name>BJdof1</name>
+                    <initialPositionMOrRad>0.0</initialPositionMOrRad>
+                    <velocityMeterPerSecOrRadPerSec>0.0</velocityMeterPerSecOrRadPerSec>
+                </degreeOfFreedom>
+            </component>
+            <component>
+                <jointName>ThumbMeta</jointName>
+                <jointId>
+                    <ns100:componentType xmlns:ns100="http://www.cgtechnical.com/ami/genericModel/mstns">J</ns100:componentType>
+                    <ns101:componentNumber xmlns:ns101="http://www.cgtechnical.com/ami/genericModel/mstns">3400</ns101:componentNumber>
+                </jointId>
+                <seqNum>31</seqNum>
+                <simulationType>Physics-based</simulationType>
+                <degreeOfFreedom>
+                    <name>PART Palm assy-1--THUMB_YOKE_4DEG Version 2-1_</name>
+                    <initialPositionMOrRad>0.0</initialPositionMOrRad>
+                    <velocityMeterPerSecOrRadPerSec>0.0</velocityMeterPerSecOrRadPerSec>
+                </degreeOfFreedom>
+            </component>
+            <component>
+                <jointName>SternoClavicular</jointName>
+                <jointId>
+                    <ns102:componentType xmlns:ns102="http://www.cgtechnical.com/ami/genericModel/mstns">J</ns102:componentType>
+                    <ns103:componentNumber xmlns:ns103="http://www.cgtechnical.com/ami/genericModel/mstns">39</ns103:componentNumber>
+                </jointId>
+                <seqNum>25</seqNum>
+                <simulationType>Physics-based</simulationType>
+                <degreeOfFreedom>
+                    <name>SC_DE</name>
+                    <initialPositionMOrRad>0.0</initialPositionMOrRad>
+                    <velocityMeterPerSecOrRadPerSec>0.0</velocityMeterPerSecOrRadPerSec>
+                </degreeOfFreedom>
+                <degreeOfFreedom>
+                    <name>SC_PR</name>
+                    <initialPositionMOrRad>0.0</initialPositionMOrRad>
+                    <velocityMeterPerSecOrRadPerSec>0.0</velocityMeterPerSecOrRadPerSec>
+                </degreeOfFreedom>
+            </component>
+            <component>
+                <jointName>RingKnuckle</jointName>
+                <jointId>
+                    <ns104:componentType xmlns:ns104="http://www.cgtechnical.com/ami/genericModel/mstns">J</ns104:componentType>
+                    <ns105:componentNumber xmlns:ns105="http://www.cgtechnical.com/ami/genericModel/mstns">9268</ns105:componentNumber>
+                </jointId>
+                <seqNum>45</seqNum>
+                <simulationType>Physics-based</simulationType>
+                <degreeOfFreedom>
+                    <name>RING_METACAR_I-1--PART ring proximal assy-1_</name>
+                    <initialPositionMOrRad>0.0</initialPositionMOrRad>
+                    <velocityMeterPerSecOrRadPerSec>0.0</velocityMeterPerSecOrRadPerSec>
+                </degreeOfFreedom>
+            </component>
+            <component>
+                <jointName>LittlePIP</jointName>
+                <jointId>
+                    <ns106:componentType xmlns:ns106="http://www.cgtechnical.com/ami/genericModel/mstns">J</ns106:componentType>
+                    <ns107:componentNumber xmlns:ns107="http://www.cgtechnical.com/ami/genericModel/mstns">18065</ns107:componentNumber>
+                </jointId>
+                <seqNum>37</seqNum>
+                <simulationType>Physics-based</simulationType>
+                <degreeOfFreedom>
+                    <name>PART little proximal assy-1--PART little mid assy-1_</name>
+                    <initialPositionMOrRad>0.0</initialPositionMOrRad>
+                    <velocityMeterPerSecOrRadPerSec>0.0</velocityMeterPerSecOrRadPerSec>
+                </degreeOfFreedom>
+            </component>
+            <component>
+                <jointName>LittleDIP</jointName>
+                <jointId>
+                    <ns108:componentType xmlns:ns108="http://www.cgtechnical.com/ami/genericModel/mstns">J</ns108:componentType>
+                    <ns109:componentNumber xmlns:ns109="http://www.cgtechnical.com/ami/genericModel/mstns">26595</ns109:componentNumber>
+                </jointId>
+                <seqNum>38</seqNum>
+                <simulationType>Physics-based</simulationType>
+                <degreeOfFreedom>
+                    <name>PART little mid assy-1--PART little distal assy-1_</name>
+                    <initialPositionMOrRad>0.0</initialPositionMOrRad>
+                    <velocityMeterPerSecOrRadPerSec>0.0</velocityMeterPerSecOrRadPerSec>
+                </degreeOfFreedom>
+            </component>
+            <component>
+                <jointName>GhostLittleDIP</jointName>
+                <jointId>
+                    <ns110:componentType xmlns:ns110="http://www.cgtechnical.com/ami/genericModel/mstns">J</ns110:componentType>
+                    <ns111:componentNumber xmlns:ns111="http://www.cgtechnical.com/ami/genericModel/mstns">1152</ns111:componentNumber>
+                </jointId>
+                <seqNum>12</seqNum>
+                <simulationType>Physics-based</simulationType>
+                <degreeOfFreedom>
+                    <name>PART little mid assy-1--PART little distal assy-1_</name>
+                    <initialPositionMOrRad>0.0</initialPositionMOrRad>
+                    <velocityMeterPerSecOrRadPerSec>0.0</velocityMeterPerSecOrRadPerSec>
+                </degreeOfFreedom>
+            </component>
+            <component>
+                <jointName>Neck</jointName>
+                <jointId>
+                    <ns112:componentType xmlns:ns112="http://www.cgtechnical.com/ami/genericModel/mstns">J</ns112:componentType>
+                    <ns113:componentNumber xmlns:ns113="http://www.cgtechnical.com/ami/genericModel/mstns">41</ns113:componentNumber>
+                </jointId>
+                <seqNum>20</seqNum>
+                <simulationType>Physics-based</simulationType>
+                <degreeOfFreedom>
+                    <name>Ndof1</name>
+                    <initialPositionMOrRad>0.0</initialPositionMOrRad>
+                    <velocityMeterPerSecOrRadPerSec>0.0</velocityMeterPerSecOrRadPerSec>
+                </degreeOfFreedom>
+                <degreeOfFreedom>
+                    <name>Ndof2</name>
+                    <initialPositionMOrRad>0.0</initialPositionMOrRad>
+                    <velocityMeterPerSecOrRadPerSec>0.0</velocityMeterPerSecOrRadPerSec>
+                </degreeOfFreedom>
+                <degreeOfFreedom>
+                    <name>Ndof3</name>
+                    <initialPositionMOrRad>0.0</initialPositionMOrRad>
+                    <velocityMeterPerSecOrRadPerSec>0.0</velocityMeterPerSecOrRadPerSec>
+                </degreeOfFreedom>
+            </component>
+            <component>
+                <jointName>GhostMiddlePIP</jointName>
+                <jointId>
+                    <ns114:componentType xmlns:ns114="http://www.cgtechnical.com/ami/genericModel/mstns">J</ns114:componentType>
+                    <ns115:componentNumber xmlns:ns115="http://www.cgtechnical.com/ami/genericModel/mstns">1149</ns115:componentNumber>
+                </jointId>
+                <seqNum>10</seqNum>
+                <simulationType>Physics-based</simulationType>
+                <degreeOfFreedom>
+                    <name>PART Middle proximal-1--PART Middle mid assy-1_</name>
+                    <initialPositionMOrRad>0.0</initialPositionMOrRad>
+                    <velocityMeterPerSecOrRadPerSec>0.0</velocityMeterPerSecOrRadPerSec>
+                </degreeOfFreedom>
+            </component>
+            <component>
+                <jointName>SternoClavicularL</jointName>
+                <jointId>
+                    <ns116:componentType xmlns:ns116="http://www.cgtechnical.com/ami/genericModel/mstns">J</ns116:componentType>
+                    <ns117:componentNumber xmlns:ns117="http://www.cgtechnical.com/ami/genericModel/mstns">40</ns117:componentNumber>
+                </jointId>
+                <seqNum>27</seqNum>
+                <simulationType>Physics-based</simulationType>
+                <degreeOfFreedom>
+                    <name>SC_DE_L</name>
+                    <initialPositionMOrRad>0.0</initialPositionMOrRad>
+                    <velocityMeterPerSecOrRadPerSec>0.0</velocityMeterPerSecOrRadPerSec>
+                </degreeOfFreedom>
+                <degreeOfFreedom>
+                    <name>SC_PR_L</name>
+                    <initialPositionMOrRad>0.0</initialPositionMOrRad>
+                    <velocityMeterPerSecOrRadPerSec>0.0</velocityMeterPerSecOrRadPerSec>
+                </degreeOfFreedom>
+            </component>
+            <component>
+                <jointName>GhostRingKnuckle</jointName>
+                <jointId>
+                    <ns118:componentType xmlns:ns118="http://www.cgtechnical.com/ami/genericModel/mstns">J</ns118:componentType>
+                    <ns119:componentNumber xmlns:ns119="http://www.cgtechnical.com/ami/genericModel/mstns">1165</ns119:componentNumber>
+                </jointId>
+                <seqNum>4</seqNum>
+                <simulationType>Physics-based</simulationType>
+                <degreeOfFreedom>
+                    <name>RING_METACAR_I-1--PART ring proximal assy-1_</name>
+                    <initialPositionMOrRad>0.0</initialPositionMOrRad>
+                    <velocityMeterPerSecOrRadPerSec>0.0</velocityMeterPerSecOrRadPerSec>
+                </degreeOfFreedom>
+            </component>
+            <component>
+                <jointName>RadioCarpal</jointName>
+                <jointId>
+                    <ns120:componentType xmlns:ns120="http://www.cgtechnical.com/ami/genericModel/mstns">J</ns120:componentType>
+                    <ns121:componentNumber xmlns:ns121="http://www.cgtechnical.com/ami/genericModel/mstns">37</ns121:componentNumber>
+                </jointId>
+                <seqNum>21</seqNum>
+                <simulationType>Physics-based</simulationType>
+                <degreeOfFreedom>
+                    <name>RC_URD</name>
+                    <initialPositionMOrRad>0.0</initialPositionMOrRad>
+                    <velocityMeterPerSecOrRadPerSec>0.0</velocityMeterPerSecOrRadPerSec>
+                </degreeOfFreedom>
+                <degreeOfFreedom>
+                    <name>RC_FE</name>
+                    <initialPositionMOrRad>0.0</initialPositionMOrRad>
+                    <velocityMeterPerSecOrRadPerSec>0.0</velocityMeterPerSecOrRadPerSec>
+                </degreeOfFreedom>
+            </component>
+            <component>
+                <jointName>GhostIndexSide</jointName>
+                <jointId>
+                    <ns122:componentType xmlns:ns122="http://www.cgtechnical.com/ami/genericModel/mstns">J</ns122:componentType>
+                    <ns123:componentNumber xmlns:ns123="http://www.cgtechnical.com/ami/genericModel/mstns">1148</ns123:componentNumber>
+                </jointId>
+                <seqNum>3</seqNum>
+                <simulationType>Physics-based</simulationType>
+                <degreeOfFreedom>
+                    <name>PART Palm assy-1--INDEX_METACAR_Ver 3-1_</name>
+                    <initialPositionMOrRad>0.0</initialPositionMOrRad>
+                    <velocityMeterPerSecOrRadPerSec>0.0</velocityMeterPerSecOrRadPerSec>
+                </degreeOfFreedom>
+            </component>
+        </setup>
+        <solver>
+            <simulationTimeSec>
+                <startTimeSec>0.0</startTimeSec>
+                <stopTimeSec>10.0</stopTimeSec>
+            </simulationTimeSec>
+            <solverOptions>
+                <solverName>ode45(Dormand-Prince)</solverName>
+                <integrationType>Variable Step</integrationType>
+                <stepSizeSec>
+                    <fixed>0.01</fixed>
+                    <min>1.0E-16</min>
+                    <max>0.0010</max>
+                    <initial>1.0E-16</initial>
+                </stepSizeSec>
+                <tolerance>
+                    <absolute>1.0E-6</absolute>
+                    <relative>1.0E-6</relative>
+                </tolerance>
+            </solverOptions>
+        </solver>
+        <dynamicEngine>
+            <name>SimMechanics</name>
+        </dynamicEngine>
+        <outputData>
+            <fileStorage>
+                <filename>MotionData.mat</filename>
+                <samplingTimeSec>0.01</samplingTimeSec>
+            </fileStorage>
+            <liveAnimation>
+                <dataStreamingMethod>MSMS UDP Block</dataStreamingMethod>
+                <animationDataMethod>Feature Commands</animationDataMethod>
+                <samplingTimeSec>0.01</samplingTimeSec>
+            </liveAnimation>
+        </outputData>
+    </simulationSetup>
+</simulationSetupInfo>
+

@@ -1,0 +1,26 @@
+function colMap = RainbowColormap( )
+
+% Stops
+stops = [[1,0,0];...
+         [1,1,0];...
+         [0,1,0];...
+         [0,1,1];...
+         [0,0,1];...
+         [1,0,1];...
+         [1,0,0]];
+% stopValues = linspace(minValue, maxValue, size(stops,1));
+
+colMap = [];
+
+for ii = 1:size(stops,1)-1
+    
+    tmpMap = [linspace(stops(ii,1), stops(ii+1,1), 100)',...
+              linspace(stops(ii,2), stops(ii+1,2), 100)',...
+              linspace(stops(ii,3), stops(ii+1,3), 100)'];
+    
+    colMap = [colMap;tmpMap];
+          
+end % END FOR
+end % END FUNCTION
+
+% EOF

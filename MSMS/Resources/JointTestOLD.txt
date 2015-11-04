@@ -1,0 +1,23 @@
+ShoulderYaw = ShoulderRoll
+Shoulder1 = ShoulderYaw???
+ShoulderPitch = ShoulderPitch
+
+Wrist1 = WristPitch
+Wrist2 = WristYaw
+
+Elbow1 = ShoulderRoll
+Elbow2 = ElbowPitch
+Elbow3 = WristRoll
+
+Palm1 = ThumbMeta
+Palm2 = IndexSide
+Palm3 = MiddleKnuckle
+Palm4 = RingSide
+Palm5 = LittleSide
+
+ThumbYoke = ThumbSide
+IndexKnuckleJoint = IndexKnuckle
+RingKnuckleJoint = RingKnuckle
+LittleKnuckleJoint = LittleKnuckle
+ThumbKnuckleJoint = ThumbKnucle
+

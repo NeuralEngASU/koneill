@@ -1,0 +1,114 @@
+%	MouseSimpleAnalysis Script (For CSCs and CEs)
+%		Kevin O'Neill
+%		Mario Capecchi Lab
+%		20131102
+%		
+%	To Use:
+%		Run Script
+%		Select File-type to import (will import all 16 files: CSC or SE)
+%			Will save the .mat
+%		Script will run several analysis procedures
+%		Select whether or not to save the results
+%			Resulting figures will be saved as .png, .fig, and, .ai
+
+
+%% Load Data
+
+
+[fileName, pathName] = uigetfile({'*.ncs';'*.nse'}, 'Select A Single File'); % Prompts the user to select *ONE* file.
+
+if isequal(fileName,0) % Cancles the script of no file was selcted
+	fprintf('User selected Cancel, program will end. DEBUG_Select_File');
+	return;
+else
+	exprExt  = '\.[a-z]+$';
+	exprDate = '[0-9]+-[0-9]+-[0-9]+_[0-9]+-[0-9]+-[0-9]+';
+
+	fileExt = regexp(fileName, exprExt);	% Gets the file extension from the file name
+	expDate = regexp(pathName, exprDate);	% Gets the experiment date from the file path
+
+	fprintf('%s files selected from: %s\nDate of experiment: %s', fileExt, pathName, expDate);
+
+end % END IF
+
+fileList = dir(fullfile(pathName, ['*', fileExt]);
+
+if isequal(fileExt, '.nsc') % Continuously Sampled Data (CSC)
+
+	[timeStamps, channelNumbers, sampleFreq, numValidSample, samples, header] = Nlx2MatCSC( fileList(1).name, [1,1,1,1,1], 1, 1, 1);
+
+else if isequal(fileExt, 'nse') % Spike Events
+
+	[timeStamps, ScNumbers, cellNumbers, features, samples, header] = Nlx2MatSpike( fileList(1).name, [1,1,1,1,1], 1, 1, 1);
+
+
+else
+	disp('Something went wrong at: DEBUG_File_Load')
+end % END IF
+
+
+% **** Use this after initial testing on data structure **** %
+
+
+if isequal(fileExt, '.nsc') % Continuously Sampled Data (CSC)
+
+	for i = 1:numel(fileList)
+		% put desired data into matrix, like:
+		% Rows: Channels
+		% Columns: pseudo-time indicies
+		% planes: voltage, timeStamps
+	end % END FOR
+	
+	% Save as expData_CSC.mat	
+
+	CSCAnalysis(expData_CSC.mat)
+
+else if isequal(fileExt, 'nse') % Spike Events
+
+	for i = 1:numel(fileList)
+		% put desired data into matrix, like:
+		% Rows: Channels
+		% Columns: pseudo-time indicies
+		% planes: Spikes?, timeStamps
+	end % END FOR
+	
+	% Save expDate_SE.mat
+	
+	SEAnalysis(expData_SE.mat)
+
+else
+	disp('Something went wrong at: DEBUG_File_Load')
+end % END IF
+
+function [] = CSCAnalysis( dataCSC )
+
+	% Voltage change vs laser stim
+	% Freq band power
+	% 	Fourier transform
+	% LFPs
+	% Noise quantification
+	% Signal-to-noise calculation
+	% PSTH of time vs firing rate/voltage during stim
+
+end % END FUNCTION
+
+function [] = SEAnalysis( dataSE )
+
+	% Rastergram
+	% 	Histogram
+	%	Boxcar-lowpass filter firing rate curve
+	% 	Average firing rate per channel
+	% 		Heatmap of electrode location
+	
+	%	Trial Schematic
+	%		Overall Raw Voltage Trace (or of trial)
+	%			Raw Voltage Trace in Trial (or closeup of stim)
+	%				Rastergram
+	%					Instantaneous firing rate
+	
+	% If there is a laser, auto-correlation
+	% Average spike waveform
+
+end % END FUNCTION
+
+% EOF

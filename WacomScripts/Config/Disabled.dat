@@ -1,0 +1,1169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root type="map">
+  <CPLLastApp type="integer">0</CPLLastApp>
+  <CPLLastPosition type="map">
+    <X type="integer">363</X>
+    <Y type="integer">211</Y>
+    <Z type="integer">0</Z>
+  </CPLLastPosition>
+  <CPLLastTabPane type="integer">0</CPLLastTabPane>
+  <CPLOpened type="string">Wed Jul 04 10:32:54 2012
+</CPLOpened>
+  <DisplayAsserts type="bool">false</DisplayAsserts>
+  <DriverOn1Off0 type="bool">true</DriverOn1Off0>
+  <ImportFileVersion type="integer">4</ImportFileVersion>
+  <LeftHandedMouse type="bool">false</LeftHandedMouse>
+  <NoStartWarnings type="integer">0</NoStartWarnings>
+  <OSInterface type="map">
+    <ApplicationMap type="map">
+      <AppID0 type="map">
+        <ApplicationLongName type="string"/>
+        <ApplicationName type="string">All</ApplicationName>
+      </AppID0>
+    </ApplicationMap>
+    <ClickSound type="bool">false</ClickSound>
+  </OSInterface>
+  <PTKDisplayBrightness type="integer">2</PTKDisplayBrightness>
+  <ShowSystemTrayIcon type="bool">true</ShowSystemTrayIcon>
+  <SideSwitchPressAndTap type="bool">false</SideSwitchPressAndTap>
+  <TabletArray type="array">
+    <ArrayElement type="map">
+      <BacklightBrightness type="integer">100</BacklightBrightness>
+      <ContextManager type="map">
+        <DisplayToggleOverlay type="map">
+          <DisplayCycles type="array">
+            <ArrayElement type="map">
+              <CtxMgrToggleMode type="bool">true</CtxMgrToggleMode>
+            </ArrayElement>
+          </DisplayCycles>
+          <OpaqueOverlay type="bool">true</OpaqueOverlay>
+        </DisplayToggleOverlay>
+        <FinePointOverlay type="map">
+          <FinePointScale type="double">2</FinePointScale>
+        </FinePointOverlay>
+        <MappingGroupArray type="array">
+          <ArrayElement type="map">
+            <ApplicationID type="integer">0</ApplicationID>
+            <MappingSetArray type="array">
+              <ArrayElement type="map">
+                <Default type="integer">3</Default>
+                <DisplayUnits type="integer">2</DisplayUnits>
+                <InputScreenAreaArray type="array">
+                  <ArrayElement type="map">
+                    <AreaID type="integer">0</AreaID>
+                    <InputArea type="map">
+                      <AreaType type="integer">3</AreaType>
+                      <AspectType type="integer">2</AspectType>
+                      <ButtonDownMask type="integer">4294967295</ButtonDownMask>
+                      <ButtonUpMask type="integer">4294967295</ButtonUpMask>
+                      <Locks type="integer">0</Locks>
+                      <MoveMask type="integer">384</MoveMask>
+                      <Options type="integer">32784</Options>
+                      <OverlapArea type="map">
+                        <Extent type="map">
+                          <X type="integer">12192</X>
+                          <Y type="integer">7620</Y>
+                          <Z type="integer">2047</Z>
+                        </Extent>
+                        <Origin type="map">
+                          <X type="integer">0</X>
+                          <Y type="integer">22860</Y>
+                          <Z type="integer">-1023</Z>
+                        </Origin>
+                      </OverlapArea>
+                      <PacketRate type="integer">100</PacketRate>
+                      <TabletInputArea type="map">
+                        <Extent type="map">
+                          <X type="integer">12192</X>
+                          <Y type="integer">7620</Y>
+                          <Z type="integer">2047</Z>
+                        </Extent>
+                        <Origin type="map">
+                          <X type="integer">0</X>
+                          <Y type="integer">22860</Y>
+                          <Z type="integer">-1023</Z>
+                        </Origin>
+                      </TabletInputArea>
+                      <TabletInsetOn type="bool">false</TabletInsetOn>
+                    </InputArea>
+                    <ScreenArea type="map">
+                      <AreaType type="integer">0</AreaType>
+                      <Ballistic type="integer">1</Ballistic>
+                      <CalibrationMonitor type="integer">0</CalibrationMonitor>
+                      <CursorMode type="bool">false</CursorMode>
+                      <Locks type="integer">0</Locks>
+                      <MouseOrientation type="bool">false</MouseOrientation>
+                      <MouseSpeed type="integer">5</MouseSpeed>
+                      <Options type="integer">1</Options>
+                      <ScaleFactorX type="integer">1</ScaleFactorX>
+                      <ScaleFactorY type="integer">1</ScaleFactorY>
+                      <ScreenOutputArea type="map">
+                        <Extent type="map">
+                          <X type="integer">1920</X>
+                          <Y type="integer">1080</Y>
+                          <Z type="integer">0</Z>
+                        </Extent>
+                        <Origin type="map">
+                          <X type="integer">0</X>
+                          <Y type="integer">0</Y>
+                          <Z type="integer">0</Z>
+                        </Origin>
+                      </ScreenOutputArea>
+                      <SensitivityX type="integer">65536</SensitivityX>
+                      <SensitivityY type="integer">65536</SensitivityY>
+                      <WhichMonitor type="integer">0</WhichMonitor>
+                    </ScreenArea>
+                  </ArrayElement>
+                  <ArrayElement type="map">
+                    <AreaID type="integer">1</AreaID>
+                    <InputArea type="map">
+                      <AreaType type="integer">4</AreaType>
+                      <AspectType type="integer">2</AspectType>
+                      <ButtonDownMask type="integer">4294967295</ButtonDownMask>
+                      <ButtonUpMask type="integer">4294967295</ButtonUpMask>
+                      <Locks type="integer">0</Locks>
+                      <MoveMask type="integer">384</MoveMask>
+                      <Options type="integer">32784</Options>
+                      <OverlapArea type="map">
+                        <Extent type="map">
+                          <X type="integer">36536</X>
+                          <Y type="integer">22820</Y>
+                          <Z type="integer">2047</Z>
+                        </Extent>
+                        <Origin type="map">
+                          <X type="integer">12232</X>
+                          <Y type="integer">0</Y>
+                          <Z type="integer">-1023</Z>
+                        </Origin>
+                      </OverlapArea>
+                      <PacketRate type="integer">100</PacketRate>
+                      <TabletInputArea type="map">
+                        <Extent type="map">
+                          <X type="integer">36536</X>
+                          <Y type="integer">22820</Y>
+                          <Z type="integer">2047</Z>
+                        </Extent>
+                        <Origin type="map">
+                          <X type="integer">12232</X>
+                          <Y type="integer">0</Y>
+                          <Z type="integer">-1023</Z>
+                        </Origin>
+                      </TabletInputArea>
+                      <TabletInsetOn type="bool">false</TabletInsetOn>
+                    </InputArea>
+                    <ScreenArea type="map">
+                      <AreaType type="integer">0</AreaType>
+                      <Ballistic type="integer">1</Ballistic>
+                      <CalibrationMonitor type="integer">0</CalibrationMonitor>
+                      <CursorMode type="bool">false</CursorMode>
+                      <Locks type="integer">0</Locks>
+                      <MouseOrientation type="bool">false</MouseOrientation>
+                      <MouseSpeed type="integer">5</MouseSpeed>
+                      <Options type="integer">1</Options>
+                      <ScaleFactorX type="integer">1</ScaleFactorX>
+                      <ScaleFactorY type="integer">1</ScaleFactorY>
+                      <ScreenOutputArea type="map">
+                        <Extent type="map">
+                          <X type="integer">1920</X>
+                          <Y type="integer">1080</Y>
+                          <Z type="integer">0</Z>
+                        </Extent>
+                        <Origin type="map">
+                          <X type="integer">0</X>
+                          <Y type="integer">0</Y>
+                          <Z type="integer">0</Z>
+                        </Origin>
+                      </ScreenOutputArea>
+                      <SensitivityX type="integer">65536</SensitivityX>
+                      <SensitivityY type="integer">65536</SensitivityY>
+                      <WhichMonitor type="integer">0</WhichMonitor>
+                    </ScreenArea>
+                  </ArrayElement>
+                  <ArrayElement type="map">
+                    <AreaID type="integer">2</AreaID>
+                    <InputArea type="map">
+                      <AreaType type="integer">0</AreaType>
+                      <AspectType type="integer">2</AspectType>
+                      <ButtonDownMask type="integer">4294967295</ButtonDownMask>
+                      <ButtonUpMask type="integer">4294967295</ButtonUpMask>
+                      <Locks type="integer">0</Locks>
+                      <MoveMask type="integer">384</MoveMask>
+                      <Options type="integer">32784</Options>
+                      <OverlapArea type="map">
+                        <Extent type="map">
+                          <X type="integer">48768</X>
+                          <Y type="integer">30480</Y>
+                          <Z type="integer">2047</Z>
+                        </Extent>
+                        <Origin type="map">
+                          <X type="integer">0</X>
+                          <Y type="integer">0</Y>
+                          <Z type="integer">-1023</Z>
+                        </Origin>
+                      </OverlapArea>
+                      <PacketRate type="integer">100</PacketRate>
+                      <TabletInputArea type="map">
+                        <Extent type="map">
+                          <X type="integer">48768</X>
+                          <Y type="integer">30480</Y>
+                          <Z type="integer">2047</Z>
+                        </Extent>
+                        <Origin type="map">
+                          <X type="integer">0</X>
+                          <Y type="integer">0</Y>
+                          <Z type="integer">-1023</Z>
+                        </Origin>
+                      </TabletInputArea>
+                      <TabletInsetOn type="bool">false</TabletInsetOn>
+                    </InputArea>
+                    <ScreenArea type="map">
+                      <AreaType type="integer">0</AreaType>
+                      <Ballistic type="integer">1</Ballistic>
+                      <CalibrationMonitor type="integer">0</CalibrationMonitor>
+                      <CursorMode type="bool">false</CursorMode>
+                      <Locks type="integer">0</Locks>
+                      <MouseOrientation type="bool">false</MouseOrientation>
+                      <MouseSpeed type="integer">5</MouseSpeed>
+                      <Options type="integer">1</Options>
+                      <ScaleFactorX type="integer">1</ScaleFactorX>
+                      <ScaleFactorY type="integer">1</ScaleFactorY>
+                      <ScreenOutputArea type="map">
+                        <Extent type="map">
+                          <X type="integer">1920</X>
+                          <Y type="integer">1080</Y>
+                          <Z type="integer">0</Z>
+                        </Extent>
+                        <Origin type="map">
+                          <X type="integer">0</X>
+                          <Y type="integer">0</Y>
+                          <Z type="integer">0</Z>
+                        </Origin>
+                      </ScreenOutputArea>
+                      <SensitivityX type="integer">65536</SensitivityX>
+                      <SensitivityY type="integer">65536</SensitivityY>
+                      <WhichMonitor type="integer">0</WhichMonitor>
+                    </ScreenArea>
+                  </ArrayElement>
+                </InputScreenAreaArray>
+                <LastZipType type="integer">1</LastZipType>
+                <Name type="string"/>
+                <Origin type="integer">0</Origin>
+                <OutputArea type="map">
+                  <Locks type="integer">0</Locks>
+                  <RelativeItems type="integer">0</RelativeItems>
+                  <ReportedItems type="integer">448</ReportedItems>
+                  <SensitivityX type="integer">65536</SensitivityX>
+                  <SensitivityY type="integer">65536</SensitivityY>
+                  <SensitivityZ type="integer">65536</SensitivityZ>
+                  <TabletOutputArea type="map">
+                    <Extent type="map">
+                      <X type="integer">48768</X>
+                      <Y type="integer">30480</Y>
+                      <Z type="integer">2047</Z>
+                    </Extent>
+                    <Origin type="map">
+                      <X type="integer">0</X>
+                      <Y type="integer">0</Y>
+                      <Z type="integer">-1023</Z>
+                    </Origin>
+                  </TabletOutputArea>
+                </OutputArea>
+                <Range type="integer">0</Range>
+                <ScaleFactorX type="integer">65536</ScaleFactorX>
+                <ScaleFactorY type="integer">65536</ScaleFactorY>
+                <TabletUnits type="integer">4</TabletUnits>
+                <TransducerID type="map">
+                  <Design type="integer">0</Design>
+                  <SerialNumber type="integer">0</SerialNumber>
+                  <Type type="integer">0</Type>
+                </TransducerID>
+                <Type type="integer">3</Type>
+              </ArrayElement>
+              <ArrayElement type="map">
+                <Default type="integer">3</Default>
+                <DisplayUnits type="integer">2</DisplayUnits>
+                <InputScreenAreaArray type="array">
+                  <ArrayElement type="map">
+                    <AreaID type="integer">0</AreaID>
+                    <InputArea type="map">
+                      <AreaType type="integer">3</AreaType>
+                      <AspectType type="integer">2</AspectType>
+                      <ButtonDownMask type="integer">4294967295</ButtonDownMask>
+                      <ButtonUpMask type="integer">4294967295</ButtonUpMask>
+                      <Locks type="integer">0</Locks>
+                      <MoveMask type="integer">384</MoveMask>
+                      <Options type="integer">32784</Options>
+                      <OverlapArea type="map">
+                        <Extent type="map">
+                          <X type="integer">12192</X>
+                          <Y type="integer">7620</Y>
+                          <Z type="integer">2047</Z>
+                        </Extent>
+                        <Origin type="map">
+                          <X type="integer">0</X>
+                          <Y type="integer">22860</Y>
+                          <Z type="integer">-1023</Z>
+                        </Origin>
+                      </OverlapArea>
+                      <PacketRate type="integer">100</PacketRate>
+                      <TabletInputArea type="map">
+                        <Extent type="map">
+                          <X type="integer">12192</X>
+                          <Y type="integer">7620</Y>
+                          <Z type="integer">2047</Z>
+                        </Extent>
+                        <Origin type="map">
+                          <X type="integer">0</X>
+                          <Y type="integer">22860</Y>
+                          <Z type="integer">-1023</Z>
+                        </Origin>
+                      </TabletInputArea>
+                      <TabletInsetOn type="bool">false</TabletInsetOn>
+                    </InputArea>
+                    <ScreenArea type="map">
+                      <AreaType type="integer">0</AreaType>
+                      <Ballistic type="integer">1</Ballistic>
+                      <CalibrationMonitor type="integer">0</CalibrationMonitor>
+                      <CursorMode type="bool">false</CursorMode>
+                      <Locks type="integer">0</Locks>
+                      <MouseOrientation type="bool">false</MouseOrientation>
+                      <MouseSpeed type="integer">5</MouseSpeed>
+                      <Options type="integer">1</Options>
+                      <ScaleFactorX type="integer">1</ScaleFactorX>
+                      <ScaleFactorY type="integer">1</ScaleFactorY>
+                      <ScreenOutputArea type="map">
+                        <Extent type="map">
+                          <X type="integer">1920</X>
+                          <Y type="integer">1080</Y>
+                          <Z type="integer">0</Z>
+                        </Extent>
+                        <Origin type="map">
+                          <X type="integer">0</X>
+                          <Y type="integer">0</Y>
+                          <Z type="integer">0</Z>
+                        </Origin>
+                      </ScreenOutputArea>
+                      <SensitivityX type="integer">65536</SensitivityX>
+                      <SensitivityY type="integer">65536</SensitivityY>
+                      <WhichMonitor type="integer">0</WhichMonitor>
+                    </ScreenArea>
+                  </ArrayElement>
+                  <ArrayElement type="map">
+                    <AreaID type="integer">1</AreaID>
+                    <InputArea type="map">
+                      <AreaType type="integer">4</AreaType>
+                      <AspectType type="integer">2</AspectType>
+                      <ButtonDownMask type="integer">4294967295</ButtonDownMask>
+                      <ButtonUpMask type="integer">4294967295</ButtonUpMask>
+                      <Locks type="integer">0</Locks>
+                      <MoveMask type="integer">384</MoveMask>
+                      <Options type="integer">32784</Options>
+                      <OverlapArea type="map">
+                        <Extent type="map">
+                          <X type="integer">36536</X>
+                          <Y type="integer">22820</Y>
+                          <Z type="integer">2047</Z>
+                        </Extent>
+                        <Origin type="map">
+                          <X type="integer">12232</X>
+                          <Y type="integer">0</Y>
+                          <Z type="integer">-1023</Z>
+                        </Origin>
+                      </OverlapArea>
+                      <PacketRate type="integer">100</PacketRate>
+                      <TabletInputArea type="map">
+                        <Extent type="map">
+                          <X type="integer">36536</X>
+                          <Y type="integer">22820</Y>
+                          <Z type="integer">2047</Z>
+                        </Extent>
+                        <Origin type="map">
+                          <X type="integer">12232</X>
+                          <Y type="integer">0</Y>
+                          <Z type="integer">-1023</Z>
+                        </Origin>
+                      </TabletInputArea>
+                      <TabletInsetOn type="bool">false</TabletInsetOn>
+                    </InputArea>
+                    <ScreenArea type="map">
+                      <AreaType type="integer">0</AreaType>
+                      <Ballistic type="integer">1</Ballistic>
+                      <CalibrationMonitor type="integer">0</CalibrationMonitor>
+                      <CursorMode type="bool">false</CursorMode>
+                      <Locks type="integer">0</Locks>
+                      <MouseOrientation type="bool">false</MouseOrientation>
+                      <MouseSpeed type="integer">5</MouseSpeed>
+                      <Options type="integer">1</Options>
+                      <ScaleFactorX type="integer">1</ScaleFactorX>
+                      <ScaleFactorY type="integer">1</ScaleFactorY>
+                      <ScreenOutputArea type="map">
+                        <Extent type="map">
+                          <X type="integer">1920</X>
+                          <Y type="integer">1080</Y>
+                          <Z type="integer">0</Z>
+                        </Extent>
+                        <Origin type="map">
+                          <X type="integer">0</X>
+                          <Y type="integer">0</Y>
+                          <Z type="integer">0</Z>
+                        </Origin>
+                      </ScreenOutputArea>
+                      <SensitivityX type="integer">65536</SensitivityX>
+                      <SensitivityY type="integer">65536</SensitivityY>
+                      <WhichMonitor type="integer">0</WhichMonitor>
+                    </ScreenArea>
+                  </ArrayElement>
+                  <ArrayElement type="map">
+                    <AreaID type="integer">2</AreaID>
+                    <InputArea type="map">
+                      <AreaType type="integer">0</AreaType>
+                      <AspectType type="integer">2</AspectType>
+                      <ButtonDownMask type="integer">4294967295</ButtonDownMask>
+                      <ButtonUpMask type="integer">4294967295</ButtonUpMask>
+                      <Locks type="integer">0</Locks>
+                      <MoveMask type="integer">384</MoveMask>
+                      <Options type="integer">32784</Options>
+                      <OverlapArea type="map">
+                        <Extent type="map">
+                          <X type="integer">48768</X>
+                          <Y type="integer">30480</Y>
+                          <Z type="integer">2047</Z>
+                        </Extent>
+                        <Origin type="map">
+                          <X type="integer">0</X>
+                          <Y type="integer">0</Y>
+                          <Z type="integer">-1023</Z>
+                        </Origin>
+                      </OverlapArea>
+                      <PacketRate type="integer">100</PacketRate>
+                      <TabletInputArea type="map">
+                        <Extent type="map">
+                          <X type="integer">48768</X>
+                          <Y type="integer">30480</Y>
+                          <Z type="integer">2047</Z>
+                        </Extent>
+                        <Origin type="map">
+                          <X type="integer">0</X>
+                          <Y type="integer">0</Y>
+                          <Z type="integer">-1023</Z>
+                        </Origin>
+                      </TabletInputArea>
+                      <TabletInsetOn type="bool">false</TabletInsetOn>
+                    </InputArea>
+                    <ScreenArea type="map">
+                      <AreaType type="integer">0</AreaType>
+                      <Ballistic type="integer">1</Ballistic>
+                      <CalibrationMonitor type="integer">0</CalibrationMonitor>
+                      <CursorMode type="bool">true</CursorMode>
+                      <Locks type="integer">0</Locks>
+                      <MouseOrientation type="bool">false</MouseOrientation>
+                      <MouseSpeed type="integer">5</MouseSpeed>
+                      <Options type="integer">1</Options>
+                      <ScaleFactorX type="integer">1</ScaleFactorX>
+                      <ScaleFactorY type="integer">1</ScaleFactorY>
+                      <ScreenOutputArea type="map">
+                        <Extent type="map">
+                          <X type="integer">1920</X>
+                          <Y type="integer">1080</Y>
+                          <Z type="integer">0</Z>
+                        </Extent>
+                        <Origin type="map">
+                          <X type="integer">0</X>
+                          <Y type="integer">0</Y>
+                          <Z type="integer">0</Z>
+                        </Origin>
+                      </ScreenOutputArea>
+                      <SensitivityX type="integer">65536</SensitivityX>
+                      <SensitivityY type="integer">65536</SensitivityY>
+                      <WhichMonitor type="integer">0</WhichMonitor>
+                    </ScreenArea>
+                  </ArrayElement>
+                </InputScreenAreaArray>
+                <LastZipType type="integer">1</LastZipType>
+                <Name type="string"/>
+                <Origin type="integer">0</Origin>
+                <OutputArea type="map">
+                  <Locks type="integer">0</Locks>
+                  <RelativeItems type="integer">0</RelativeItems>
+                  <ReportedItems type="integer">448</ReportedItems>
+                  <SensitivityX type="integer">65536</SensitivityX>
+                  <SensitivityY type="integer">65536</SensitivityY>
+                  <SensitivityZ type="integer">65536</SensitivityZ>
+                  <TabletOutputArea type="map">
+                    <Extent type="map">
+                      <X type="integer">48768</X>
+                      <Y type="integer">30480</Y>
+                      <Z type="integer">2047</Z>
+                    </Extent>
+                    <Origin type="map">
+                      <X type="integer">0</X>
+                      <Y type="integer">0</Y>
+                      <Z type="integer">-1023</Z>
+                    </Origin>
+                  </TabletOutputArea>
+                </OutputArea>
+                <Range type="integer">0</Range>
+                <ScaleFactorX type="integer">65536</ScaleFactorX>
+                <ScaleFactorY type="integer">65536</ScaleFactorY>
+                <TabletUnits type="integer">4</TabletUnits>
+                <TransducerID type="map">
+                  <Design type="integer">0</Design>
+                  <SerialNumber type="integer">0</SerialNumber>
+                  <Type type="integer">32768</Type>
+                </TransducerID>
+                <Type type="integer">3</Type>
+              </ArrayElement>
+              <ArrayElement type="map">
+                <Default type="integer">3</Default>
+                <DisplayUnits type="integer">2</DisplayUnits>
+                <InputScreenAreaArray type="array">
+                  <ArrayElement type="map">
+                    <AreaID type="integer">0</AreaID>
+                    <InputArea type="map">
+                      <AreaType type="integer">3</AreaType>
+                      <AspectType type="integer">2</AspectType>
+                      <ButtonDownMask type="integer">4294967295</ButtonDownMask>
+                      <ButtonUpMask type="integer">4294967295</ButtonUpMask>
+                      <Locks type="integer">0</Locks>
+                      <MoveMask type="integer">384</MoveMask>
+                      <Options type="integer">32784</Options>
+                      <OverlapArea type="map">
+                        <Extent type="map">
+                          <X type="integer">12192</X>
+                          <Y type="integer">7620</Y>
+                          <Z type="integer">2047</Z>
+                        </Extent>
+                        <Origin type="map">
+                          <X type="integer">0</X>
+                          <Y type="integer">22860</Y>
+                          <Z type="integer">-1023</Z>
+                        </Origin>
+                      </OverlapArea>
+                      <PacketRate type="integer">100</PacketRate>
+                      <TabletInputArea type="map">
+                        <Extent type="map">
+                          <X type="integer">12192</X>
+                          <Y type="integer">7620</Y>
+                          <Z type="integer">2047</Z>
+                        </Extent>
+                        <Origin type="map">
+                          <X type="integer">0</X>
+                          <Y type="integer">22860</Y>
+                          <Z type="integer">-1023</Z>
+                        </Origin>
+                      </TabletInputArea>
+                      <TabletInsetOn type="bool">false</TabletInsetOn>
+                    </InputArea>
+                    <ScreenArea type="map">
+                      <AreaType type="integer">0</AreaType>
+                      <Ballistic type="integer">1</Ballistic>
+                      <CalibrationMonitor type="integer">0</CalibrationMonitor>
+                      <CursorMode type="bool">false</CursorMode>
+                      <Locks type="integer">0</Locks>
+                      <MouseOrientation type="bool">false</MouseOrientation>
+                      <MouseSpeed type="integer">5</MouseSpeed>
+                      <Options type="integer">1</Options>
+                      <ScaleFactorX type="integer">1</ScaleFactorX>
+                      <ScaleFactorY type="integer">1</ScaleFactorY>
+                      <ScreenOutputArea type="map">
+                        <Extent type="map">
+                          <X type="integer">1920</X>
+                          <Y type="integer">1080</Y>
+                          <Z type="integer">0</Z>
+                        </Extent>
+                        <Origin type="map">
+                          <X type="integer">0</X>
+                          <Y type="integer">0</Y>
+                          <Z type="integer">0</Z>
+                        </Origin>
+                      </ScreenOutputArea>
+                      <SensitivityX type="integer">65536</SensitivityX>
+                      <SensitivityY type="integer">65536</SensitivityY>
+                      <WhichMonitor type="integer">0</WhichMonitor>
+                    </ScreenArea>
+                  </ArrayElement>
+                  <ArrayElement type="map">
+                    <AreaID type="integer">1</AreaID>
+                    <InputArea type="map">
+                      <AreaType type="integer">4</AreaType>
+                      <AspectType type="integer">2</AspectType>
+                      <ButtonDownMask type="integer">4294967295</ButtonDownMask>
+                      <ButtonUpMask type="integer">4294967295</ButtonUpMask>
+                      <Locks type="integer">0</Locks>
+                      <MoveMask type="integer">384</MoveMask>
+                      <Options type="integer">32784</Options>
+                      <OverlapArea type="map">
+                        <Extent type="map">
+                          <X type="integer">36536</X>
+                          <Y type="integer">22820</Y>
+                          <Z type="integer">2047</Z>
+                        </Extent>
+                        <Origin type="map">
+                          <X type="integer">12232</X>
+                          <Y type="integer">0</Y>
+                          <Z type="integer">-1023</Z>
+                        </Origin>
+                      </OverlapArea>
+                      <PacketRate type="integer">100</PacketRate>
+                      <TabletInputArea type="map">
+                        <Extent type="map">
+                          <X type="integer">36536</X>
+                          <Y type="integer">22820</Y>
+                          <Z type="integer">2047</Z>
+                        </Extent>
+                        <Origin type="map">
+                          <X type="integer">12232</X>
+                          <Y type="integer">0</Y>
+                          <Z type="integer">-1023</Z>
+                        </Origin>
+                      </TabletInputArea>
+                      <TabletInsetOn type="bool">false</TabletInsetOn>
+                    </InputArea>
+                    <ScreenArea type="map">
+                      <AreaType type="integer">0</AreaType>
+                      <Ballistic type="integer">1</Ballistic>
+                      <CalibrationMonitor type="integer">0</CalibrationMonitor>
+                      <CursorMode type="bool">false</CursorMode>
+                      <Locks type="integer">0</Locks>
+                      <MouseOrientation type="bool">false</MouseOrientation>
+                      <MouseSpeed type="integer">5</MouseSpeed>
+                      <Options type="integer">1</Options>
+                      <ScaleFactorX type="integer">1</ScaleFactorX>
+                      <ScaleFactorY type="integer">1</ScaleFactorY>
+                      <ScreenOutputArea type="map">
+                        <Extent type="map">
+                          <X type="integer">1920</X>
+                          <Y type="integer">1080</Y>
+                          <Z type="integer">0</Z>
+                        </Extent>
+                        <Origin type="map">
+                          <X type="integer">0</X>
+                          <Y type="integer">0</Y>
+                          <Z type="integer">0</Z>
+                        </Origin>
+                      </ScreenOutputArea>
+                      <SensitivityX type="integer">65536</SensitivityX>
+                      <SensitivityY type="integer">65536</SensitivityY>
+                      <WhichMonitor type="integer">0</WhichMonitor>
+                    </ScreenArea>
+                  </ArrayElement>
+                  <ArrayElement type="map">
+                    <AreaID type="integer">2</AreaID>
+                    <InputArea type="map">
+                      <AreaType type="integer">0</AreaType>
+                      <AspectType type="integer">2</AspectType>
+                      <ButtonDownMask type="integer">4294967295</ButtonDownMask>
+                      <ButtonUpMask type="integer">4294967295</ButtonUpMask>
+                      <Locks type="integer">0</Locks>
+                      <MoveMask type="integer">384</MoveMask>
+                      <Options type="integer">32784</Options>
+                      <OverlapArea type="map">
+                        <Extent type="map">
+                          <X type="integer">48768</X>
+                          <Y type="integer">30480</Y>
+                          <Z type="integer">2047</Z>
+                        </Extent>
+                        <Origin type="map">
+                          <X type="integer">0</X>
+                          <Y type="integer">0</Y>
+                          <Z type="integer">-1023</Z>
+                        </Origin>
+                      </OverlapArea>
+                      <PacketRate type="integer">100</PacketRate>
+                      <TabletInputArea type="map">
+                        <Extent type="map">
+                          <X type="integer">48768</X>
+                          <Y type="integer">30480</Y>
+                          <Z type="integer">2047</Z>
+                        </Extent>
+                        <Origin type="map">
+                          <X type="integer">0</X>
+                          <Y type="integer">0</Y>
+                          <Z type="integer">-1023</Z>
+                        </Origin>
+                      </TabletInputArea>
+                      <TabletInsetOn type="bool">false</TabletInsetOn>
+                    </InputArea>
+                    <ScreenArea type="map">
+                      <AreaType type="integer">0</AreaType>
+                      <Ballistic type="integer">1</Ballistic>
+                      <CalibrationMonitor type="integer">0</CalibrationMonitor>
+                      <CursorMode type="bool">false</CursorMode>
+                      <Locks type="integer">0</Locks>
+                      <MouseOrientation type="bool">false</MouseOrientation>
+                      <MouseSpeed type="integer">5</MouseSpeed>
+                      <Options type="integer">1</Options>
+                      <ScaleFactorX type="integer">1</ScaleFactorX>
+                      <ScaleFactorY type="integer">1</ScaleFactorY>
+                      <ScreenOutputArea type="map">
+                        <Extent type="map">
+                          <X type="integer">1920</X>
+                          <Y type="integer">1080</Y>
+                          <Z type="integer">0</Z>
+                        </Extent>
+                        <Origin type="map">
+                          <X type="integer">0</X>
+                          <Y type="integer">0</Y>
+                          <Z type="integer">0</Z>
+                        </Origin>
+                      </ScreenOutputArea>
+                      <SensitivityX type="integer">65536</SensitivityX>
+                      <SensitivityY type="integer">65536</SensitivityY>
+                      <WhichMonitor type="integer">0</WhichMonitor>
+                    </ScreenArea>
+                  </ArrayElement>
+                </InputScreenAreaArray>
+                <LastZipType type="integer">1</LastZipType>
+                <Name type="string"/>
+                <Origin type="integer">0</Origin>
+                <OutputArea type="map">
+                  <Locks type="integer">0</Locks>
+                  <RelativeItems type="integer">0</RelativeItems>
+                  <ReportedItems type="integer">448</ReportedItems>
+                  <SensitivityX type="integer">65536</SensitivityX>
+                  <SensitivityY type="integer">65536</SensitivityY>
+                  <SensitivityZ type="integer">65536</SensitivityZ>
+                  <TabletOutputArea type="map">
+                    <Extent type="map">
+                      <X type="integer">48768</X>
+                      <Y type="integer">30480</Y>
+                      <Z type="integer">2047</Z>
+                    </Extent>
+                    <Origin type="map">
+                      <X type="integer">0</X>
+                      <Y type="integer">0</Y>
+                      <Z type="integer">-1023</Z>
+                    </Origin>
+                  </TabletOutputArea>
+                </OutputArea>
+                <Range type="integer">0</Range>
+                <ScaleFactorX type="integer">65536</ScaleFactorX>
+                <ScaleFactorY type="integer">65536</ScaleFactorY>
+                <TabletUnits type="integer">4</TabletUnits>
+                <TransducerID type="map">
+                  <Design type="integer">0</Design>
+                  <SerialNumber type="integer">0</SerialNumber>
+                  <Type type="integer">16384</Type>
+                </TransducerID>
+                <Type type="integer">3</Type>
+              </ArrayElement>
+              <ArrayElement type="map">
+                <Default type="integer">3</Default>
+                <DisplayUnits type="integer">2</DisplayUnits>
+                <InputScreenAreaArray type="array">
+                  <ArrayElement type="map">
+                    <AreaID type="integer">0</AreaID>
+                    <InputArea type="map">
+                      <AreaType type="integer">3</AreaType>
+                      <AspectType type="integer">2</AspectType>
+                      <ButtonDownMask type="integer">4294967295</ButtonDownMask>
+                      <ButtonUpMask type="integer">4294967295</ButtonUpMask>
+                      <Locks type="integer">0</Locks>
+                      <MoveMask type="integer">384</MoveMask>
+                      <Options type="integer">32784</Options>
+                      <OverlapArea type="map">
+                        <Extent type="map">
+                          <X type="integer">12192</X>
+                          <Y type="integer">7620</Y>
+                          <Z type="integer">2047</Z>
+                        </Extent>
+                        <Origin type="map">
+                          <X type="integer">0</X>
+                          <Y type="integer">22860</Y>
+                          <Z type="integer">-1023</Z>
+                        </Origin>
+                      </OverlapArea>
+                      <PacketRate type="integer">100</PacketRate>
+                      <TabletInputArea type="map">
+                        <Extent type="map">
+                          <X type="integer">12192</X>
+                          <Y type="integer">7620</Y>
+                          <Z type="integer">2047</Z>
+                        </Extent>
+                        <Origin type="map">
+                          <X type="integer">0</X>
+                          <Y type="integer">22860</Y>
+                          <Z type="integer">-1023</Z>
+                        </Origin>
+                      </TabletInputArea>
+                      <TabletInsetOn type="bool">false</TabletInsetOn>
+                    </InputArea>
+                    <ScreenArea type="map">
+                      <AreaType type="integer">1</AreaType>
+                      <Ballistic type="integer">2</Ballistic>
+                      <CalibrationMonitor type="integer">0</CalibrationMonitor>
+                      <CursorMode type="bool">false</CursorMode>
+                      <Locks type="integer">0</Locks>
+                      <MouseOrientation type="bool">false</MouseOrientation>
+                      <MouseSpeed type="integer">2</MouseSpeed>
+                      <Options type="integer">1</Options>
+                      <ScaleFactorX type="integer">1</ScaleFactorX>
+                      <ScaleFactorY type="integer">1</ScaleFactorY>
+                      <ScreenOutputArea type="map">
+                        <Extent type="map">
+                          <X type="integer">915</X>
+                          <Y type="integer">854</Y>
+                          <Z type="integer">0</Z>
+                        </Extent>
+                        <Origin type="map">
+                          <X type="integer">474</X>
+                          <Y type="integer">92</Y>
+                          <Z type="integer">0</Z>
+                        </Origin>
+                      </ScreenOutputArea>
+                      <SensitivityX type="integer">65536</SensitivityX>
+                      <SensitivityY type="integer">65536</SensitivityY>
+                      <WhichMonitor type="integer">2</WhichMonitor>
+                    </ScreenArea>
+                  </ArrayElement>
+                  <ArrayElement type="map">
+                    <AreaID type="integer">1</AreaID>
+                    <InputArea type="map">
+                      <AreaType type="integer">4</AreaType>
+                      <AspectType type="integer">2</AspectType>
+                      <ButtonDownMask type="integer">4294967295</ButtonDownMask>
+                      <ButtonUpMask type="integer">4294967295</ButtonUpMask>
+                      <Locks type="integer">0</Locks>
+                      <MoveMask type="integer">384</MoveMask>
+                      <Options type="integer">32784</Options>
+                      <OverlapArea type="map">
+                        <Extent type="map">
+                          <X type="integer">36536</X>
+                          <Y type="integer">22820</Y>
+                          <Z type="integer">2047</Z>
+                        </Extent>
+                        <Origin type="map">
+                          <X type="integer">12232</X>
+                          <Y type="integer">0</Y>
+                          <Z type="integer">-1023</Z>
+                        </Origin>
+                      </OverlapArea>
+                      <PacketRate type="integer">100</PacketRate>
+                      <TabletInputArea type="map">
+                        <Extent type="map">
+                          <X type="integer">36536</X>
+                          <Y type="integer">22820</Y>
+                          <Z type="integer">2047</Z>
+                        </Extent>
+                        <Origin type="map">
+                          <X type="integer">12232</X>
+                          <Y type="integer">0</Y>
+                          <Z type="integer">-1023</Z>
+                        </Origin>
+                      </TabletInputArea>
+                      <TabletInsetOn type="bool">false</TabletInsetOn>
+                    </InputArea>
+                    <ScreenArea type="map">
+                      <AreaType type="integer">1</AreaType>
+                      <Ballistic type="integer">2</Ballistic>
+                      <CalibrationMonitor type="integer">0</CalibrationMonitor>
+                      <CursorMode type="bool">false</CursorMode>
+                      <Locks type="integer">0</Locks>
+                      <MouseOrientation type="bool">false</MouseOrientation>
+                      <MouseSpeed type="integer">2</MouseSpeed>
+                      <Options type="integer">1</Options>
+                      <ScaleFactorX type="integer">1</ScaleFactorX>
+                      <ScaleFactorY type="integer">1</ScaleFactorY>
+                      <ScreenOutputArea type="map">
+                        <Extent type="map">
+                          <X type="integer">915</X>
+                          <Y type="integer">854</Y>
+                          <Z type="integer">0</Z>
+                        </Extent>
+                        <Origin type="map">
+                          <X type="integer">474</X>
+                          <Y type="integer">92</Y>
+                          <Z type="integer">0</Z>
+                        </Origin>
+                      </ScreenOutputArea>
+                      <SensitivityX type="integer">65536</SensitivityX>
+                      <SensitivityY type="integer">65536</SensitivityY>
+                      <WhichMonitor type="integer">2</WhichMonitor>
+                    </ScreenArea>
+                  </ArrayElement>
+                  <ArrayElement type="map">
+                    <AreaID type="integer">2</AreaID>
+                    <InputArea type="map">
+                      <AreaType type="integer">0</AreaType>
+                      <AspectType type="integer">2</AspectType>
+                      <ButtonDownMask type="integer">4294967295</ButtonDownMask>
+                      <ButtonUpMask type="integer">4294967295</ButtonUpMask>
+                      <Locks type="integer">0</Locks>
+                      <MoveMask type="integer">384</MoveMask>
+                      <Options type="integer">32784</Options>
+                      <OverlapArea type="map">
+                        <Extent type="map">
+                          <X type="integer">48768</X>
+                          <Y type="integer">30480</Y>
+                          <Z type="integer">2047</Z>
+                        </Extent>
+                        <Origin type="map">
+                          <X type="integer">0</X>
+                          <Y type="integer">0</Y>
+                          <Z type="integer">-1023</Z>
+                        </Origin>
+                      </OverlapArea>
+                      <PacketRate type="integer">100</PacketRate>
+                      <TabletInputArea type="map">
+                        <Extent type="map">
+                          <X type="integer">48768</X>
+                          <Y type="integer">30480</Y>
+                          <Z type="integer">2047</Z>
+                        </Extent>
+                        <Origin type="map">
+                          <X type="integer">0</X>
+                          <Y type="integer">0</Y>
+                          <Z type="integer">-1023</Z>
+                        </Origin>
+                      </TabletInputArea>
+                      <TabletInsetOn type="bool">false</TabletInsetOn>
+                    </InputArea>
+                    <ScreenArea type="map">
+                      <AreaType type="integer">1</AreaType>
+                      <Ballistic type="integer">2</Ballistic>
+                      <CalibrationMonitor type="integer">0</CalibrationMonitor>
+                      <CursorMode type="bool">false</CursorMode>
+                      <Locks type="integer">0</Locks>
+                      <MouseOrientation type="bool">false</MouseOrientation>
+                      <MouseSpeed type="integer">2</MouseSpeed>
+                      <Options type="integer">1</Options>
+                      <ScaleFactorX type="integer">1</ScaleFactorX>
+                      <ScaleFactorY type="integer">1</ScaleFactorY>
+                      <ScreenOutputArea type="map">
+                        <Extent type="map">
+                          <X type="integer">915</X>
+                          <Y type="integer">854</Y>
+                          <Z type="integer">0</Z>
+                        </Extent>
+                        <Origin type="map">
+                          <X type="integer">474</X>
+                          <Y type="integer">92</Y>
+                          <Z type="integer">0</Z>
+                        </Origin>
+                      </ScreenOutputArea>
+                      <SensitivityX type="integer">65536</SensitivityX>
+                      <SensitivityY type="integer">65536</SensitivityY>
+                      <WhichMonitor type="integer">2</WhichMonitor>
+                    </ScreenArea>
+                  </ArrayElement>
+                </InputScreenAreaArray>
+                <LastZipType type="integer">1</LastZipType>
+                <Name type="string"/>
+                <Origin type="integer">0</Origin>
+                <OutputArea type="map">
+                  <Locks type="integer">0</Locks>
+                  <RelativeItems type="integer">0</RelativeItems>
+                  <ReportedItems type="integer">448</ReportedItems>
+                  <SensitivityX type="integer">65536</SensitivityX>
+                  <SensitivityY type="integer">65536</SensitivityY>
+                  <SensitivityZ type="integer">65536</SensitivityZ>
+                  <TabletOutputArea type="map">
+                    <Extent type="map">
+                      <X type="integer">48768</X>
+                      <Y type="integer">30480</Y>
+                      <Z type="integer">2047</Z>
+                    </Extent>
+                    <Origin type="map">
+                      <X type="integer">0</X>
+                      <Y type="integer">0</Y>
+                      <Z type="integer">-1023</Z>
+                    </Origin>
+                  </TabletOutputArea>
+                </OutputArea>
+                <Range type="integer">0</Range>
+                <ScaleFactorX type="integer">65536</ScaleFactorX>
+                <ScaleFactorY type="integer">65536</ScaleFactorY>
+                <TabletUnits type="integer">4</TabletUnits>
+                <TransducerID type="map">
+                  <Design type="integer">0</Design>
+                  <SerialNumber type="integer">130813244</SerialNumber>
+                  <Type type="integer">32791</Type>
+                </TransducerID>
+                <Type type="integer">3</Type>
+              </ArrayElement>
+            </MappingSetArray>
+            <UserID type="integer">0</UserID>
+          </ArrayElement>
+        </MappingGroupArray>
+        <Orientation type="integer">1</Orientation>
+        <PenScroller type="map">
+          <PenScrollerScale type="double">1</PenScrollerScale>
+        </PenScroller>
+      </ContextManager>
+      <DefaultTabName type="string">Intuos3 12x19</DefaultTabName>
+      <MaxDataRateOn type="bool">true</MaxDataRateOn>
+      <TabletAppRadialMenuMapArray type="array"/>
+      <TabletAppTouchFunctions type="array"/>
+      <TabletCommInterface type="map">
+        <BTDeviceAddress type="string"/>
+        <CommPort type="string">\\?\HID#VID_056A&amp;PID_00B4&amp;COL02#6&amp;B397435&amp;0&amp;0001#{4D1E55B2-F16F-11CF-88CB-001111000030}</CommPort>
+      </TabletCommInterface>
+      <TabletControlContainerArray type="array">
+        <ArrayElement type="map">
+          <ApplicationAssociated type="integer">0</ApplicationAssociated>
+          <TabletControlsButtonsArray type="array">
+            <ArrayElement type="map">
+              <ButtonFunction type="integer">0</ButtonFunction>
+              <ButtonName type="string">Leftbutton1</ButtonName>
+            </ArrayElement>
+            <ArrayElement type="map">
+              <ButtonFunction type="integer">0</ButtonFunction>
+              <ButtonName type="string">Leftbutton2</ButtonName>
+            </ArrayElement>
+            <ArrayElement type="map">
+              <ButtonFunction type="integer">0</ButtonFunction>
+              <ButtonName type="string">Leftbutton3</ButtonName>
+            </ArrayElement>
+            <ArrayElement type="map">
+              <ButtonFunction type="integer">0</ButtonFunction>
+              <ButtonName type="string">Leftbutton4</ButtonName>
+            </ArrayElement>
+            <ArrayElement type="map">
+              <ButtonFunction type="integer">0</ButtonFunction>
+              <ButtonName type="string">Rightbutton1</ButtonName>
+            </ArrayElement>
+            <ArrayElement type="map">
+              <ButtonFunction type="integer">0</ButtonFunction>
+              <ButtonName type="string">Rightbutton2</ButtonName>
+            </ArrayElement>
+            <ArrayElement type="map">
+              <ButtonFunction type="integer">0</ButtonFunction>
+              <ButtonName type="string">Rightbutton3</ButtonName>
+            </ArrayElement>
+            <ArrayElement type="map">
+              <ButtonFunction type="integer">0</ButtonFunction>
+              <ButtonName type="string">Rightbutton4</ButtonName>
+            </ArrayElement>
+          </TabletControlsButtonsArray>
+          <TabletControlsModButtonsArray type="array"/>
+          <TouchRingShowButtonHUD type="bool">true</TouchRingShowButtonHUD>
+          <TouchStrips type="map">
+            <LeftOneD type="map">
+              <TouchStripModes type="map">
+                <Mode00 type="map">
+                  <TouchStripDirection type="integer">-1</TouchStripDirection>
+                  <TouchStripEnableTapZones type="bool">true</TouchStripEnableTapZones>
+                  <TouchStripFunction type="integer">0</TouchStripFunction>
+                  <TouchStripKeystrokeDecrease type="kestring"/>
+                  <TouchStripKeystrokeIncrease type="kestring"/>
+                  <TouchStripKeystrokeName type="string"/>
+                  <TouchStripModeName type="string">Mode00</TouchStripModeName>
+                  <TouchStripModifiers type="integer">0</TouchStripModifiers>
+                  <TouchStripSensorMethod type="integer">0</TouchStripSensorMethod>
+                  <TouchStripSpeed type="integer">3</TouchStripSpeed>
+                </Mode00>
+              </TouchStripModes>
+            </LeftOneD>
+            <RightOneD type="map">
+              <TouchStripModes type="map">
+                <Mode00 type="map">
+                  <TouchStripDirection type="integer">-1</TouchStripDirection>
+                  <TouchStripEnableTapZones type="bool">true</TouchStripEnableTapZones>
+                  <TouchStripFunction type="integer">0</TouchStripFunction>
+                  <TouchStripKeystrokeDecrease type="kestring"/>
+                  <TouchStripKeystrokeIncrease type="kestring"/>
+                  <TouchStripKeystrokeName type="string"/>
+                  <TouchStripModeName type="string">Mode00</TouchStripModeName>
+                  <TouchStripModifiers type="integer">0</TouchStripModifiers>
+                  <TouchStripSensorMethod type="integer">0</TouchStripSensorMethod>
+                  <TouchStripSpeed type="integer">3</TouchStripSpeed>
+                </Mode00>
+              </TouchStripModes>
+            </RightOneD>
+          </TouchStrips>
+        </ArrayElement>
+      </TabletControlContainerArray>
+      <TabletFlags type="integer">1</TabletFlags>
+      <TabletMode type="integer">0</TabletMode>
+      <TabletModel type="integer">264</TabletModel>
+      <TabletName type="string">Intuos3 12x19</TabletName>
+      <TabletOn1Off0 type="bool">true</TabletOn1Off0>
+      <TabletPhysicallyOn type="bool">true</TabletPhysicallyOn>
+      <TabletPopupMenuArray type="array">
+        <ArrayElement type="map">
+          <ApplicationAssociated type="integer">0</ApplicationAssociated>
+          <PopUpFontName type="string"/>
+          <PopUpFontSize type="integer">12</PopUpFontSize>
+          <PopupMenuItemsArray type="array">
+            <ArrayElement type="map">
+              <PopUpFunction type="integer">2</PopUpFunction>
+              <PopupFunctionName type="string">Pen</PopupFunctionName>
+            </ArrayElement>
+            <ArrayElement type="map">
+              <PopUpFunction type="integer">3</PopUpFunction>
+              <PopupFunctionName type="string">Mouse</PopupFunctionName>
+            </ArrayElement>
+            <ArrayElement type="map">
+              <PopUpFunction type="integer">8</PopUpFunction>
+              <PopupFunctionName type="string">QuickPoint Left</PopupFunctionName>
+            </ArrayElement>
+            <ArrayElement type="map">
+              <PopUpFunction type="integer">9</PopUpFunction>
+              <PopupFunctionName type="string">QuickPoint Right</PopupFunctionName>
+            </ArrayElement>
+          </PopupMenuItemsArray>
+        </ArrayElement>
+      </TabletPopupMenuArray>
+      <TabletTransducerArray type="array">
+        <ArrayElement type="map">
+          <ApplicationAssociated type="integer">0</ApplicationAssociated>
+          <Buttons type="map">
+            <button1 type="map">
+              <ButtonFunction type="integer">0</ButtonFunction>
+              <ButtonName type="string">button1</ButtonName>
+              <Usage type="map">
+                <ENone type="map">
+                  <Count type="integer">0</Count>
+                </ENone>
+              </Usage>
+            </button1>
+            <button2 type="map">
+              <ButtonFunction type="integer">0</ButtonFunction>
+              <ButtonName type="string">button2</ButtonName>
+            </button2>
+            <button3 type="map">
+              <ButtonFunction type="integer">0</ButtonFunction>
+              <ButtonName type="string">button3</ButtonName>
+              <Usage type="map">
+                <ENone type="map">
+                  <Count type="integer">0</Count>
+                </ENone>
+              </Usage>
+            </button3>
+            <button4 type="map">
+              <ButtonFunction type="integer">0</ButtonFunction>
+              <ButtonName type="string">button4</ButtonName>
+            </button4>
+            <button5 type="map">
+              <ButtonFunction type="integer">0</ButtonFunction>
+              <ButtonName type="string">button5</ButtonName>
+            </button5>
+          </Buttons>
+          <DefaultTransName type="string">\~56:0</DefaultTransName>
+          <IsButtonBox type="bool">false</IsButtonBox>
+          <TransducerID type="map">
+            <Design type="integer">0</Design>
+            <SerialNumber type="integer">130813244</SerialNumber>
+            <Type type="integer">32791</Type>
+          </TransducerID>
+          <TransducerName type="string">\~56:0</TransducerName>
+          <TransducerType type="integer">56</TransducerType>
+          <Wheel type="map">
+            <KeystrokeName type="string"/>
+            <Modifier type="kestring"/>
+            <WheelBackwardKeys type="kestring"/>
+            <WheelDirection type="integer">1</WheelDirection>
+            <WheelForwardKeys type="kestring"/>
+            <WheelFunction type="integer">3</WheelFunction>
+            <WheelLinesPerTick type="integer">3</WheelLinesPerTick>
+            <WheelName type="string">ScrollWheel</WheelName>
+          </Wheel>
+        </ArrayElement>
+      </TabletTransducerArray>
+      <TabletType type="integer">17</TabletType>
+    </ArrayElement>
+  </TabletArray>
+  <TabletAwareApplicationInterface type="map">
+    <NormalizedMaxPressure type="integer">1023</NormalizedMaxPressure>
+  </TabletAwareApplicationInterface>
+</root>

@@ -1,0 +1,98 @@
+Component Name		Component ID
+Sphere1			S6
+radius			S8
+Torso			S9
+Sphere2			S10
+clavicle			S11
+clavicle_left			S12
+Head			S13
+Sphere3			S14
+palm			S15
+LowerBody			S16
+Sphere4			S18
+Sphere5			S22
+Sphere6			S26
+ThumbProximal			S111
+LittleProximal			S112
+MiddleMedial			S113
+COBOT MAIN ASSEMBLY_1			S114
+RingDistal			S115
+HR TO ELBOW_1			S116
+SHOULDER TO SOCKET_1			S117
+ThumbRoll			S118
+WRIST_1			S119
+PART Palm assy_1			S1110
+ELBOW TO RR_1			S1111
+LittleDistal			S1112
+ThumbBase			S1113
+MiddleDistal			S1114
+LittleMedial			S1115
+ThumbDistal			S1116
+IndexDistal			S1117
+MCP Index			S1118
+MiddleProximal			S1119
+SHOULDER GEARMOTOR ASSEMBLY_1			S1120
+RingMedial			S1121
+MCP Little			S1122
+MCP Ring			S1123
+IndexMedial			S1124
+RingProximal			S1125
+IndexProximal			S1126
+SHOULDER TO HR_1			S1127
+ulna			S20991
+humerus			S21387
+
+Sphere1J			J7
+Sphere2J			J11
+Sphere3J			J15
+Sphere4J			J19
+Sphere5J			J23
+Sphere6J			J27
+GlenoHumeral			J36
+RadioCarpal			J37
+RadioUlnar			J38
+SternoClavicular			J39
+SternoClavicularL			J40
+Neck			J41
+HumeroUlnar			J42
+baseJoint			J43
+TorsoJoint			J44
+RingDIP			J1144
+ElbowPitch			J1145
+WristPitch			J1146
+ThumbDIP			J1147
+IndexSide			J1148
+MiddlePIP			J1149
+ShoulderRoll			J1150
+ThumbSide			J1151
+LittleDIP			J1152
+WristYaw			J1153
+IndexPIP			J1154
+LittlePIP			J1155
+ThumbMeta			J1156
+Shoulder1			J1157
+ShoulderPitch			J1158
+WristRoll			J1159
+LittleKnuckle			J1160
+LittleSide			J1161
+RingPIP			J1162
+ThumbKnuckle			J1163
+RingSide			J1164
+RingKnuckle			J1165
+ShoulderRoll2			J1166
+MiddleDIP			J1167
+IndexDIP			J1168
+IndexKnuckle			J1169
+MiddleKnuckle			J1170
+
+
+
+
+NeckRotZ			EA57
+NeckRotY			EA58
+NeckRotX			EA59
+
+EyeLocation			PS72
+
+
+

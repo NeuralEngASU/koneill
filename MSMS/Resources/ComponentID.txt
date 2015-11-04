@@ -1,0 +1,103 @@
+Component Name		Component ID
+radius			S8
+Torso			S9
+ulna			S10
+clavicle			S11
+clavicle_left			S12
+Head			S13
+humerus			S14
+palm			S15
+LowerBody			S16
+PART Thumb proximal assy_1			S111
+PART little proximal assy_1			S112
+PART Middle mid assy_1			S113
+COBOT MAIN ASSEMBLY_1			S114
+PART Ring distal assy_1			S115
+HR TO ELBOW_1			S116
+SHOULDER TO SOCKET_1			S117
+THUMB_YOKE_4DEG Version 2_1			S118
+WRIST_1			S119
+PART Palm assy_1			S1110
+ELBOW TO RR_1			S1111
+PART little distal assy_1			S1112
+PART thumb base assy_1			S1113
+PART middle distal assy_1			S1114
+PART little mid assy_1			S1115
+PART Thumb distal assy_1			S1116
+PART Index distal assy_1			S1117
+INDEX_METACAR_Ver 3_1			S1118
+PART Middle proximal_1			S1119
+SHOULDER GEARMOTOR ASSEMBLY_1			S1120
+PART ring mid assy_1			S1121
+LITTLE_METACAR_I_1			S1122
+RING_METACAR_I_1			S1123
+PART Index mid assy_1			S1124
+PART ring proximal assy_1			S1125
+PART Index proximal assy_1			S1126
+SHOULDER TO HR_1			S1127
+
+GlenoHumeral			J36
+RadioCarpal			J37
+RadioUlnar			J38
+SternoClavicular			J39
+SternoClavicularL			J40
+Neck			J41
+HumeroUlnar			J42
+baseJoint			J43
+TorsoJoint			J44
+PART ring mid assy_1__PART Ring distal assy_1			J1144
+HR TO ELBOW_1__ELBOW TO RR_1			J1145
+COBOT MAIN ASSEMBLY_1__WRIST_1			J1146
+PART Thumb proximal assy_1__PART Thumb distal assy_1			J1147
+PART Palm assy_1__INDEX_METACAR_Ver 3_1			J1148
+PART Middle proximal_1__PART Middle mid assy_1			J1149
+SHOULDER TO SOCKET_1__SHOULDER GEARMOTOR ASSEMBLY_1			J1150
+THUMB_YOKE_4DEG Version 2_1__PART thumb base assy_1			J1151
+PART little mid assy_1__PART little distal assy_1			J1152
+WRIST_1__PART Palm assy_1			J1153
+PART Index proximal assy_1__PART Index mid assy_1			J1154
+PART little proximal assy_1__PART little mid assy_1			J1155
+PART Palm assy_1__THUMB_YOKE_4DEG Version 2_1			J1156
+RootPart__SHOULDER TO SOCKET_1			J1157
+SHOULDER GEARMOTOR ASSEMBLY_1__SHOULDER TO HR_1			J1158
+ELBOW TO RR_1__COBOT MAIN ASSEMBLY_1			J1159
+LITTLE_METACAR_I_1__PART little proximal assy_1			J1160
+PART Palm assy_1__LITTLE_METACAR_I_1			J1161
+PART ring proximal assy_1__PART ring mid assy_1			J1162
+PART Palm assy_1__RING_METACAR_I_1			J1164
+RING_METACAR_I_1__PART ring proximal assy_1			J1165
+SHOULDER TO HR_1__HR TO ELBOW_1			J1166
+PART Middle mid assy_1__PART middle distal assy_1			J1167
+PART Index mid assy_1__PART Index distal assy_1			J1168
+INDEX_METACAR_Ver 3_1__PART Index proximal assy_1			J1169
+PART Palm assy_1__PART Middle proximal_1			J1170
+
+
+
+
+NeckRotZ			EA57
+NeckRotY			EA58
+NeckRotX			EA59
+
+EyeLocation			PS72
+
+Cube			S1
+Sphere2			S2
+Sphere			S6
+Cylinder			S7
+Sphere1			S98
+Chair			S100
+Floor			S101
+Table			S102
+Sphere3			S106
+
+TableJoint			J92
+Sphere1Joint			J99
+Sphere2Joint			J103
+Sphere3Joint			J107
+SphereJoint			J200
+FloorJoint			J201
+CylinderJoint			J207
+ChairJoint			J300
+CubeJoint			J301
+

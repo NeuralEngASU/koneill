@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<musculoskeletalModelView creationDate="2013-01-11-07:00" modelName="MaleRightGhost" version="0.1" xmlns="http://www.cgtechnical.com/ami/modelView/mvs">
+    <description/>
+    <generalViewInfo>
+        <showGroundAxes>false</showGroundAxes>
+        <backgroundColor>
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+        </backgroundColor>
+        <cameras>
+            <camera name="Default Camera">
+                <ns1:id xmlns:ns1="http://www.cgtechnical.com/ami/genericModel/mstns">
+                    <ns1:componentType>HT</ns1:componentType>
+                    <ns1:componentNumber>0</ns1:componentNumber>
+                </ns1:id>
+                <positionM>
+                    <ns2:x xmlns:ns2="http://www.cgtechnical.com/ami/genericModel/mstns">0.5</ns2:x>
+                    <ns3:y xmlns:ns3="http://www.cgtechnical.com/ami/genericModel/mstns">0.015</ns3:y>
+                    <ns4:z xmlns:ns4="http://www.cgtechnical.com/ami/genericModel/mstns">-0.3461</ns4:z>
+                </positionM>
+                <orientation>
+                    <ns5:r1c1 xmlns:ns5="http://www.cgtechnical.com/ami/genericModel/mstns">-0.9999999999999962</ns5:r1c1>
+                    <ns6:r1c2 xmlns:ns6="http://www.cgtechnical.com/ami/genericModel/mstns">-7.571034632635607E-8</ns6:r1c2>
+                    <ns7:r1c3 xmlns:ns7="http://www.cgtechnical.com/ami/genericModel/mstns">-4.371139351156489E-8</ns7:r1c3>
+                    <ns8:r2c1 xmlns:ns8="http://www.cgtechnical.com/ami/genericModel/mstns">-8.742278000372475E-8</ns8:r2c1>
+                    <ns9:r2c2 xmlns:ns9="http://www.cgtechnical.com/ami/genericModel/mstns">0.866025380605948</ns9:r2c2>
+                    <ns10:r2c3 xmlns:ns10="http://www.cgtechnical.com/ami/genericModel/mstns">0.5000000401463137</ns10:r2c3>
+                    <ns11:r3c1 xmlns:ns11="http://www.cgtechnical.com/ami/genericModel/mstns">0.0</ns11:r3c1>
+                    <ns12:r3c2 xmlns:ns12="http://www.cgtechnical.com/ami/genericModel/mstns">0.5000000401463156</ns12:r3c2>
+                    <ns13:r3c3 xmlns:ns13="http://www.cgtechnical.com/ami/genericModel/mstns">-0.8660253806059512</ns13:r3c3>
+                </orientation>
+                <projectionType>Perspective</projectionType>
+                <screenScale>1.0</screenScale>
+                <fieldOfViewRad>0.7853981633974483</fieldOfViewRad>
+                <frontClipDistanceM>0.01</frontClipDistanceM>
+                <backClipDistanceM>10.0</backClipDistanceM>
+            </camera>
+        </cameras>
+        <lastActiveCamera>
+            <ns14:componentType xmlns:ns14="http://www.cgtechnical.com/ami/genericModel/mstns">C</ns14:componentType>
+            <ns15:componentNumber xmlns:ns15="http://www.cgtechnical.com/ami/genericModel/mstns">0</ns15:componentNumber>
+        </lastActiveCamera>
+        <lights/>
+        <cameraLightState>OFF</cameraLightState>
+        <defaultLightsStates>ON</defaultLightsStates>
+    </generalViewInfo>
+</musculoskeletalModelView>
+
