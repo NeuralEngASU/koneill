@@ -1,19 +1,15 @@
-function [p,r] = wpliECoG(data1,data2)
-% PLI Calculate phase-lag index and phase similarity measure
+function [p,r] = wpliEpilepsy(phi1,phi2)
+% wpliEpilepsy Calculate weighted phase-lag index and phase similarity measure
 %
 %   [P,R] = PLI(D1,D2)
 %   For two time-domain signals D1 and D2, calculate the phase-lag index P
-%   and the phase-similarity measure R.  D1 and D2 must have the same
+%   and the phase-similarity measure R.  phi1 and phi2 must have the same
 %   number of columns; P and R will be vectors with the same number of
-%   entries as the number of columns in D1 and D2.
+%   entries as the number of columns in phi1 and phi2.
 
 % instantaneous phase
 % phi1 = atan2(imag(hilbert(data1)),data1);
 % phi2 = atan2(imag(hilbert(data2)),data2);
-
-phi1 = data1;
-phi2 = data2;
-
 
 % instantaneous phase difference
 deltaPhi = phi1 - phi2;
@@ -27,3 +23,5 @@ r = abs(mean(exp(1i*deltaPhi),1))';
 
 % phase-lag index - the average sign of the phase difference
 p = abs(mean(abs(deltaPhi).*sign(deltaPhi),1))'./mean(abs(deltaPhi),1)';
+
+end % END FUNCTION wpliEpilepsy

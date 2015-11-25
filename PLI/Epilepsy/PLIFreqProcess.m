@@ -1,6 +1,6 @@
 %% Load raw data
-szDataFile = '2014PP04Sz4.mat';
-nonSzDataFile = '2014PP04NonSz4.mat';
+szDataFile = '2014PP06Sz4.mat';
+nonSzDataFile = '2014PP06NonSz4.mat';
 
 
 
@@ -43,43 +43,106 @@ for ii = 1:size(szData,2)
     
 end % END FOR Low Pass Filter
 
-%% Notch Filter 60Hz
+%% Notch Filter 60Hz, 120Hz, 180Hz, 240Hz
 
-Fs = 30000;
-Fpass1 = 54;              % First Passband Frequency
-Fstop1 = 59;              % First Stopband Frequency
-Fstop2 = 61;              % Second Stopband Frequency
-Fpass2 = 66;              % Second Passband Frequency
-Dpass1 = 0.028774368332;  % First Passband Ripple
-Dstop  = 0.001;           % Stopband Attenuation
-Dpass2 = 0.057501127785;  % Second Passband Ripple
-dens   = 20;              % Density Factor
+Fs = 500;  % Sampling Frequency
 
-% Calculate the order from the parameters using FIRPMORD.
-[N, Fo, Ao, W] = firpmord([Fpass1 Fstop1 Fstop2 Fpass2]/(Fs/2), [1 0 ...
-                          1], [Dpass1 Dstop Dpass2]);
+Fpass1 = 54;          % First Passband Frequency
+Fstop1 = 59;          % First Stopband Frequency
+Fstop2 = 61;          % Second Stopband Frequency
+Fpass2 = 66;          % Second Passband Frequency
+Apass1 = 0.5;         % First Passband Ripple (dB)
+Astop  = 60;          % Stopband Attenuation (dB)
+Apass2 = 1;           % Second Passband Ripple (dB)
+match  = 'stopband';  % Band to match exactly
 
-% Calculate the coefficients using the FIRPM function.
-b  = firpm(N, Fo, Ao, W, {dens});
-Hd = dfilt.dffir(b);
-
-HdCoeffs = coeffs(Hd);
-
+% Construct an FDESIGN object and call its BUTTER method.
+h  = fdesign.bandstop(Fpass1, Fstop1, Fstop2, Fpass2, Apass1, Astop, ...
+                      Apass2, Fs);
+Hd = design(h, 'butter', 'MatchExactly', match);
 
 for ii = 1:size(szData,2)
-    
     szDataFilt(:,ii)    = filtfilt(HdCoeffs.Numerator, 1, szDataFilt(:,ii));
     nonSzDataFilt(:,ii) = filtfilt(HdCoeffs.Numerator, 1, nonSzDataFilt(:,ii));
     disp(ii)
-    
-end % END FOR Low Pass Filter
+end % END FOR NotchFilter
+
+% 120Hz Notch
+Fs = 500;  % Sampling Frequency
+
+Fpass1 = 114;         % First Passband Frequency
+Fstop1 = 119;         % First Stopband Frequency
+Fstop2 = 121;         % Second Stopband Frequency
+Fpass2 = 126;         % Second Passband Frequency
+Apass1 = 0.5;         % First Passband Ripple (dB)
+Astop  = 60;          % Stopband Attenuation (dB)
+Apass2 = 1;           % Second Passband Ripple (dB)
+match  = 'stopband';  % Band to match exactly
+
+% Construct an FDESIGN object and call its BUTTER method.
+h  = fdesign.bandstop(Fpass1, Fstop1, Fstop2, Fpass2, Apass1, Astop, ...
+                      Apass2, Fs);
+Hd = design(h, 'butter', 'MatchExactly', match);
+
+for ii = 1:size(szData,2)
+    szDataFilt(:,ii)    = filtfilt(HdCoeffs.Numerator, 1, szDataFilt(:,ii));
+    nonSzDataFilt(:,ii) = filtfilt(HdCoeffs.Numerator, 1, nonSzDataFilt(:,ii));
+    disp(ii)
+end % END FOR NotchFilter
+
+% 180Hz
+Fs = 500;  % Sampling Frequency
+
+Fpass1 = 174;         % First Passband Frequency
+Fstop1 = 179;         % First Stopband Frequency
+Fstop2 = 181;         % Second Stopband Frequency
+Fpass2 = 186;         % Second Passband Frequency
+Apass1 = 0.5;         % First Passband Ripple (dB)
+Astop  = 60;          % Stopband Attenuation (dB)
+Apass2 = 1;           % Second Passband Ripple (dB)
+match  = 'stopband';  % Band to match exactly
+
+% Construct an FDESIGN object and call its BUTTER method.
+h  = fdesign.bandstop(Fpass1, Fstop1, Fstop2, Fpass2, Apass1, Astop, ...
+                      Apass2, Fs);
+Hd = design(h, 'butter', 'MatchExactly', match);
+
+for ii = 1:size(szData,2)
+    szDataFilt(:,ii)    = filtfilt(HdCoeffs.Numerator, 1, szDataFilt(:,ii));
+    nonSzDataFilt(:,ii) = filtfilt(HdCoeffs.Numerator, 1, nonSzDataFilt(:,ii));
+    disp(ii)
+end % END FOR NotchFilter
+
+% 240
+
+Fs = 500;  % Sampling Frequency
+
+Fpass1 = 234;         % First Passband Frequency
+Fstop1 = 239;         % First Stopband Frequency
+Fstop2 = 241;         % Second Stopband Frequency
+Fpass2 = 246;         % Second Passband Frequency
+Apass1 = 0.5;         % First Passband Ripple (dB)
+Astop  = 60;          % Stopband Attenuation (dB)
+Apass2 = 1;           % Second Passband Ripple (dB)
+match  = 'stopband';  % Band to match exactly
+
+% Construct an FDESIGN object and call its BUTTER method.
+h  = fdesign.bandstop(Fpass1, Fstop1, Fstop2, Fpass2, Apass1, Astop, ...
+                      Apass2, Fs);
+Hd = design(h, 'butter', 'MatchExactly', match);
+
+for ii = 1:size(szData,2)
+    szDataFilt(:,ii)    = filtfilt(HdCoeffs.Numerator, 1, szDataFilt(:,ii));
+    nonSzDataFilt(:,ii) = filtfilt(HdCoeffs.Numerator, 1, nonSzDataFilt(:,ii));
+    disp(ii)
+end % END FOR NotchFilter
 
 %% Band Pass Filters
 
 freqBandPass = [5,45; 55,95; 105,145; 155,195; 205,245];
 freqBandStop = [freqBandPass(:,1)-5, freqBandPass(:,2)+5];
 
-for jj = 2:5%:size(freqBandPass,1)
+for jj = 1:5%:size(freqBandPass,1)
 Fs = 500;  % Sampling Frequency
 
 Fstop1 = freqBandStop(jj,1); % First Stopband Frequency
@@ -122,7 +185,7 @@ save(szOutputFileName, 'data');
 clear data
 
 eval(['data = nonSzDataFilt', num2str(freqBandStop(jj,1)), '_', num2str(freqBandStop(jj,2)), ';']);
-save(nonSzOtputFileName, ['nonSzDataFilt', num2str(freqBandStop(jj,1)), '_', num2str(freqBandStop(jj,2))]);
+save(nonSzOtputFileName, 'data');
 clear data
 
 end % END FOR num freq windows
@@ -163,16 +226,16 @@ plot(nonSzDataFilt200_250(:,1))
 
 %% PLI
 
-fileList{1} = {'D:\PLI\SeizureDetection\Processed\Sz\Clips\2014PP04Sz4_100_150.mat'};
-% fileList{2} = {'D:\PLI\SeizureDetection\Processed\Sz\Clips\2014PP04Sz4_50_100.mat'};
-% fileList{3} = {'D:\PLI\SeizureDetection\Processed\Sz\Clips\2014PP04Sz4_150_200.mat'};
-% fileList{4} = {'D:\PLI\SeizureDetection\Processed\Sz\Clips\2014PP04Sz4_200_250.mat'};
-% fileList{5} = {'D:\PLI\SeizureDetection\Processed\Sz\Clips\2014PP04Sz4_Filt.mat'};
-% fileList{6} = {'D:\PLI\SeizureDetection\Processed\NonSz\Clips\2014PP04NonSz4_0_50.mat'};
-% fileList{7} = {'D:\PLI\SeizureDetection\Processed\NonSz\Clips\2014PP04NonSz4_50_100.mat'};
-% fileList{8} = {'D:\PLI\SeizureDetection\Processed\NonSz\Clips\2014PP04NonSz4_150_200.mat'};
-% fileList{9} = {'D:\PLI\SeizureDetection\Processed\NonSz\Clips\2014PP04NonSz4_200_250.mat'};
-% fileList{10} = {'D:\PLI\SeizureDetection\Processed\NonSz\Clips\2014PP04NonSz4_Filt.mat'};
+fileList{1} = {'D:\PLI\SeizureDetection\Processed\Sz\Clips\2014PP06Sz4_0_50.mat'};
+fileList{2} = {'D:\PLI\SeizureDetection\Processed\Sz\Clips\2014PP06Sz4_50_100.mat'};
+fileList{3} = {'D:\PLI\SeizureDetection\Processed\Sz\Clips\2014PP06Sz4_150_200.mat'};
+fileList{4} = {'D:\PLI\SeizureDetection\Processed\Sz\Clips\2014PP06Sz4_200_250.mat'};
+fileList{5} = {'D:\PLI\SeizureDetection\Processed\Sz\Clips\2014PP06Sz4_Filt.mat'};
+fileList{6} = {'D:\PLI\SeizureDetection\Processed\NonSz\Clips\2014PP06NonSz4_0_50.mat'};
+fileList{7} = {'D:\PLI\SeizureDetection\Processed\NonSz\Clips\2014PP06NonSz4_50_100.mat'};
+fileList{8} = {'D:\PLI\SeizureDetection\Processed\NonSz\Clips\2014PP06NonSz4_150_200.mat'};
+fileList{9} = {'D:\PLI\SeizureDetection\Processed\NonSz\Clips\2014PP06NonSz4_200_250.mat'};
+fileList{10} = {'D:\PLI\SeizureDetection\Processed\NonSz\Clips\2014PP06NonSz4_Filt.mat'};
 
 
 outputPath = 'D:\PLI\SeizureDetection\ProcessedPLI\';
@@ -193,6 +256,6 @@ for ii = 1:length(fileList)
     params.globalFlag = 0;
     params.globalChan = [];
 
-    [filePathOut] = GenPLIECoG(fileList{ii}{1}, outputPath, params);
+    [filePathOut] = GenPLIEpilepsy(fileList{ii}{1}, outputPath, params);
 
 end % END FOR

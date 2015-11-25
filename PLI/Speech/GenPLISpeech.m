@@ -1,4 +1,4 @@
-function [filePathOut] = GenPLIECoG(filePath, pathOutName, params)
+function [filePathOut] = GenPLISpeech(filePath, pathOutName, params)
 
 %% Parse Input
 if ~isfield(params, 'winSize');     winSize     = 1;      else winSize     = params.winSize; end
@@ -50,7 +50,7 @@ end % END IF statsFlag
 
 % filePathOut = fullfile(pathOutName, [fileName, '_PLI_winSize', num2str(winSize), '_rawPhi.mat']);
 % filePathOut = fullfile(pathOutName, [fileName, '_PLI_winSize', num2str(winSize), '.mat']);
-filePathOut = [filePathOut, '_PLI_winSize', num2str(winSize), '.mat'];
+filePathOut = [filePathOut, '_WPLI_winSize', num2str(winSize), '.mat'];
 
 %% Give User Feedback
 fprintf('******************************************************************\n')
@@ -59,12 +59,11 @@ fprintf('Loading Data: %s\n', filePath)
 fprintf('Data Size: %f MB\n',sizeFile)
 
 %% Parse variables
+% load(filePath, '-mat');
 load(filePath);
-% Header = openNSx(filePath);
-% Header = Header.MetaTags;
-% Header = header;
+% Header = Header.Header;
 
-% Detrend Data
+data = double(data);
 
 if size(data,1) > size(data,2)
     data = detrend(data);
@@ -78,14 +77,26 @@ data = atan2(imag(hilbert(data)),data);
 if isempty(chanProcess)
     chanProcess = [1:size(data,2)]';
 end %END IF
-    
 
-
+Header = Header;
+Header.Fs = 5000;
+% % Biploar
+% if biPolarFlag
+%     data2 = data(1:2:end,:) - data(2:2:end,:);
+%     data = data2;
+%     clear data2
+% end % END IF
+% 
+% if globalFlag
+%     globalAvg = mean(data(globalChan, :));
+%     data = [globalAvg; data];
+% end % END IF globalFlag
 %%
-
-% Find the number of channels
-% numChans = size(chanProcess,1);
+% Set up channel parings
 numChans = size(data,2);
+chanPairNums = nchoosek(sort(unique(1:numChans),'ascend'),2);
+pairNum      = size(chanPairNums,1);
+
 % chanProcess = [1:numChans]';
 params.chanProcess = chanProcess;
 
@@ -103,14 +114,16 @@ winNum  = floor(dataLen / (winSize * Fs));
 % Windowed data x winNum x channel
 rawWin = reshape(permute(data(1:floor(winNum*winSize*Fs),:), [1,3,2]), floor(winSize * Fs),winNum,size(chanProcess,1));
 
+
+
 deltaPhi = 0;
 smp = 0;
 
 % initialize variables
 if surrFlag
     % Set up PLI and R variables
-    pli = zeros(winNum, pairNum, surrNum+1);
-    r   = zeros(winNum, pairNum, surrNum+1);
+    pli = zeros(winNum, pairNum, surrNum+1, numTrials);
+    r   = zeros(winNum, pairNum, surrNum+1, numTrials);
     
     % for surrogate data: random phase shift applied to each channel
     smp = [zeros(pairNum,1) round(Fs)/2 + round(round(Fs)*rand(pairNum,surrNum))]; % 500-1000 samples (0.5 - 1.0 seconds)
@@ -122,13 +135,9 @@ if surrFlag
 else
     pli = zeros(winNum, pairNum, 1);
     
-    % Compute instantaneous phi for all channels
-    for phiChan = 1:size(rawWin,3)
-        phi(:,:,phiChan) = atan2(imag(hilbert(rawWin(:,:,phiChan))),rawWin(:,:,phiChan));
-    end
     % stats
     r   = zeros(winNum, pairNum, 1);
-    
+       
     if statsFlag
         binEdge = [-pi:pi/100:pi];
         
@@ -177,22 +186,37 @@ end % END IF surrFlag
 fprintf('*****\nProcessing Data\n')
 timeWatch = tic;
 
+phi = data;
 % Create save file
 save(filePathOut,'chanPairNums','Header', 'params', 'phi','-v7.3');
+clear phi;
 
 % For each channel pair
 for cp = 1:pairNum
     
+    
     % pull out data for this iteration
-    % windowed Data x winNum x channel
+    %     raw1=raw(:,:,chanPairNums(cp,1));
+    %     raw2=raw(:,:,chanPairNums(cp,2));
+    %     raw1 = rawWin(chanPairNums(cp,1),:,:);
+    %     raw2 = rawWin(chanPairNums(cp,2),:,:);
+    
+    %     % Extract data for selected channels
+    %     nsxData = openNSx(filePath, 'read', ['c:', num2str(chanPairNums(cp,1)), ',', num2str(chanPairNums(cp,2))], ['t:1:', num2str(winNum*winSize*Fs)]);
+    %
+    %     rawWin = permute(reshape(permute(nsxData.Data(:,1:winNum*winSize*Fs)', [1,3,2]), (winSize * Fs),winNum,2), [2,1,3]);
+    % Seperate Data into Windows
+    % winNum x windowed Data x channel
     raw1 = double(rawWin(:,:,chanPairNums(cp,1)));
     raw2 = double(rawWin(:,:,chanPairNums(cp,2)));
     
+    %     clear nsxData rawWin
+    
     if surrFlag
-         % Create temporary PLI and R data
-         tmpp = nan(winNum, surrNum+1);
-         tmpr = nan(winNum, surrNum+1);
-         tmpsmp = smp(cp,:);
+        % Create temporary PLI and R data
+        tmpp = nan(winNum, surrNum+1);
+        tmpr = nan(winNum, surrNum+1);
+        tmpsmp = smp(cp,:);
         
         parfor ss = 1:surrNum+1
             
@@ -201,12 +225,12 @@ for cp = 1:pairNum
             
             % calculate PLI and R
             if rawPhiFlag
-%                 tmpDeltaPhi = nan(winNum, (winSize*Fs), surrNum+1);
+                %                 tmpDeltaPhi = nan(winNum, (winSize*Fs), surrNum+1);
                 [tmpp(:,ss),tmpr(:,ss), tmpDeltaPhi(:,:,ss)]=pli(raw1, raw2s);
             else
                 [tmpp(:,ss),tmpr(:,ss),~]=pli(raw1, raw2s);
             end % END IF rawPhiFlag
-        
+            
         end
     else % No surrogates
         
@@ -216,23 +240,23 @@ for cp = 1:pairNum
         
         if rawPhiFlag
             tmpDeltaPhi = nan(winNum, 1,(winSize*Fs));
-            [tmpp(:,1),tmpr(:,1), tmpDeltaPhi(:,1,:)] = wpliECoG(raw1, raw2);
+            [tmpp(:,1),tmpr(:,1), tmpDeltaPhi(:,1,:)] = wpli(raw1, raw2);
         else
-            [tmpp(:,1),tmpr(:,1)] = wpliECoG(raw1, raw2);
+            [tmpp(:,1),tmpr(:,1)]=wpliSpeech(raw1, raw2);
         end % END IF rawPhiFlag
         
         if statsFlag
             [tmpCircMean, tmpCircMed, tmpCircVar, tmpvMParams,...
-             tmpvMScale, tmpRMSE , tmpvMCorr, tmpvMR2, ...
-             tmpCircStd,tmpCircSkew, tmpCircKurt] = CircStats(squeeze(tmpDeltaPhi)');
-        end % END IF statsFlag   
-     %%
+                tmpvMScale, tmpRMSE , tmpvMCorr, tmpvMR2, ...
+                tmpCircStd,tmpCircSkew, tmpCircKurt] = CircStats(squeeze(tmpDeltaPhi)');
+        end % END IF statsFlag
+        %%
     end % END IF surrFlag
     
-    p(:,cp,:) = tmpp;
-    r(:,cp,:) = tmpr;
-%     eval(['P', num2str(cp), ' = tmpp;']);
-%     eval(['R', num2str(cp), ' = tmpp;']);
+    p(:,cp, :) = tmpp;
+    r(:,cp, :) = tmpr;
+    %     eval(['P', num2str(cp), ' = tmpp;']);
+    %     eval(['R', num2str(cp), ' = tmpp;']);
     
     if statsFlag
         circMean(:,cp,:) = tmpCircMean;
@@ -264,10 +288,11 @@ for cp = 1:pairNum
             fprintf('Time Spent: %f\n', timeSpent)
             fprintf('Time Spent Per Pair: %f\n', timeSpent/cp)
             fprintf('Time Left: %f\n', (timeSpent/cp)*(pairNum-cp))
+%             fprintf('Word Trial: %d/%d\n', wt, numTrials)
         end % END IF
     end % END IF surrFlag
     
-% save(filePathOut,['P', num2str(cp)], ['R', num2str(cp)], '-append');
+    % save(filePathOut,['P', num2str(cp)], ['R', num2str(cp)], '-append');
     
 end % END FOR
 

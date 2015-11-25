@@ -2,7 +2,7 @@
 % x = tmpdata(:,1);
 % x = tmpData1;
 % x = detrend(data(1,1:300000));%data(:,1,1);
-x = double(data(:,1));
+x = double(dataFilt(:,1));
 figure;
 % Fs = testData.MetaTags.SamplingFreq; % sampling frequency
 Fs = 500;
@@ -12,12 +12,12 @@ NFFT = 2^nextpow2(L);
 f = Fs/2*linspace(0,1,NFFT/2+1); % single sided spectrum
 
 % high-pass filter 
-order = 3;
-Fc = 10; % cutoff frequency
-[z,p,k] = butter(order,Fc/(Fs/2),'high');
-[SOS,G] = zp2sos(z,p,k);% convert to SOS structure to use filter analysis tool
-
-x_filt = filtfilt(SOS,G,x);
+% order = 3;
+% Fc = 10; % cutoff frequency
+% [z,p,k] = butter(order,Fc/(Fs/2),'high');
+% [SOS,G] = zp2sos(z,p,k);% convert to SOS structure to use filter analysis tool
+% 
+% % x_filt = filtfilt(SOS,G,x);
 
 tic;
 [pxx,f] = pmtm(x,9,NFFT,Fs);
@@ -30,10 +30,10 @@ title('Broadband')
 xlabel('Time (seconds)')
 ylabel('Volts')
 ax2 = subplot(3,1,2);
-plot(t,x_filt,'k');
-title('High-Pass Filtered');
-xlabel('Time (seconds)');
-ylabel('Volts');
+% plot(t,x_filt,'k');
+% title('High-Pass Filtered');
+% xlabel('Time (seconds)');
+% ylabel('Volts');
 subplot(3,1,3);
 loglog(f,pxx);
 title('Multi-taper Spectrum');

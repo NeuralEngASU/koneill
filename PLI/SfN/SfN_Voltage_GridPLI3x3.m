@@ -13,9 +13,9 @@ fileOfInterest = 1;
 % nonSzFileName(fileOfInterest).name = '2012PP05NonSz1_PLI_winSize1.mat';
 % szDataFile = '2012PP05Sz1.mat';
 
-szFileName(fileOfInterest).name = '2014PP04Sz4_PLI_winSize1.mat';
-nonSzFileName(fileOfInterest).name = '2014PP04NonSz4_PLI_winSize1.mat';
-szDataFile = '2014PP04Sz4.mat';
+szFileName(fileOfInterest).name = '2014PP06Sz4_PLI_winSize1.mat';
+nonSzFileName(fileOfInterest).name = '2014PP06NonSz4_PLI_winSize1.mat';
+szDataFile = '2014PP06Sz4.mat';
 
 % Load Sz
 % load(fullfile(szFilePath, szFileName(fileOfInterest).name));
